@@ -1,0 +1,9 @@
+finding,decision,status
+Absent provider-month,Keep measures null; no imputation or inferred closure,Implemented
+Reported zeros,Retain exactly as published,Implemented
+Name and parent variants,Flag for source-based identity review; no merging,Review required where flagged
+Candidate eligibility,"Observed at origin, full history window, at least one reported positive Type 1 value in window",Provisional operational rule
+Candidate status,Use only observations at or before origin; never filter by future outcome,Implemented
+Publication timing,Confirm availability at each forecast origin before feature engineering,M07
+Actual Type 1 service status,Validate against authoritative organisation/service evidence if available,Open limitation
+Outliers,Retain observed values; inspect M03 change candidates and source context,Review required where flagged

@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/neoscar10/NHS-A-E-IDSS",
+  "start_month": "2022-01",
+  "end_month": "2026-09",
+  "expected_months": 57,
+  "source_files": 57,
+  "unique_content_months": 57,
+  "missing_months": [],
+  "unexpected_months": [],
+  "duplicate_months": [],
+  "preliminary_review_files": 0,
+  "source_format_warning_files": 1,
+  "trailing_empty_source_columns_ignored": 6,
+  "total_csv_data_rows": 11449,
+  "total_provider_rows": 11392,
+  "total_aggregate_rows": 57
+}

@@ -1,0 +1,1027 @@
+source_month,measure,provider_sum,national_total,difference_provider_minus_total,status
+2022-01,A&E attendances Type 1,1212707,1212707,0,MATCH
+2022-01,A&E attendances Type 2,36417,36417,0,MATCH
+2022-01,A&E attendances Other A&E Department,554133,554133,0,MATCH
+2022-01,A&E attendances Booked Appointments Type 1,34710,34710,0,MATCH
+2022-01,A&E attendances Booked Appointments Type 2,140,140,0,MATCH
+2022-01,A&E attendances Booked Appointments Other Department,37095,37095,0,MATCH
+2022-01,Attendances over 4hrs Type 1,405262,405262,0,MATCH
+2022-01,Attendances over 4hrs Type 2,933,933,0,MATCH
+2022-01,Attendances over 4hrs Other Department,14711,14711,0,MATCH
+2022-01,Attendances over 4hrs Booked Appointments Type 1,5384,5384,0,MATCH
+2022-01,Attendances over 4hrs Booked Appointments Type 2,0,0,0,MATCH
+2022-01,Attendances over 4hrs Booked Appointments Other Department,1314,1314,0,MATCH
+2022-01,Patients who have waited 4-12 hs from DTA to admission,105869,105869,0,MATCH
+2022-01,Patients who have waited 12+ hrs from DTA to admission,16564,16564,0,MATCH
+2022-01,Emergency admissions via A&E - Type 1,358968,358968,0,MATCH
+2022-01,Emergency admissions via A&E - Type 2,1204,1204,0,MATCH
+2022-01,Emergency admissions via A&E - Other A&E department,5320,5320,0,MATCH
+2022-01,Other emergency admissions,119460,119460,0,MATCH
+2022-02,A&E attendances Type 1,1173861,1173861,0,MATCH
+2022-02,A&E attendances Type 2,37848,37848,0,MATCH
+2022-02,A&E attendances Other A&E Department,546685,546685,0,MATCH
+2022-02,A&E attendances Booked Appointments Type 1,31959,31959,0,MATCH
+2022-02,A&E attendances Booked Appointments Type 2,122,122,0,MATCH
+2022-02,A&E attendances Booked Appointments Other Department,34888,34888,0,MATCH
+2022-02,Attendances over 4hrs Type 1,406182,406182,0,MATCH
+2022-02,Attendances over 4hrs Type 2,1128,1128,0,MATCH
+2022-02,Attendances over 4hrs Other Department,19104,19104,0,MATCH
+2022-02,Attendances over 4hrs Booked Appointments Type 1,5997,5997,0,MATCH
+2022-02,Attendances over 4hrs Booked Appointments Type 2,0,0,0,MATCH
+2022-02,Attendances over 4hrs Booked Appointments Other Department,1376,1376,0,MATCH
+2022-02,Patients who have waited 4-12 hs from DTA to admission,98506,98506,0,MATCH
+2022-02,Patients who have waited 12+ hrs from DTA to admission,16402,16402,0,MATCH
+2022-02,Emergency admissions via A&E - Type 1,334835,334835,0,MATCH
+2022-02,Emergency admissions via A&E - Type 2,1087,1087,0,MATCH
+2022-02,Emergency admissions via A&E - Other A&E department,5275,5275,0,MATCH
+2022-02,Other emergency admissions,118755,118755,0,MATCH
+2022-03,A&E attendances Type 1,1386973,1386973,0,MATCH
+2022-03,A&E attendances Type 2,41783,41783,0,MATCH
+2022-03,A&E attendances Other A&E Department,671280,671280,0,MATCH
+2022-03,A&E attendances Booked Appointments Type 1,34553,34553,0,MATCH
+2022-03,A&E attendances Booked Appointments Type 2,127,127,0,MATCH
+2022-03,A&E attendances Booked Appointments Other Department,40082,40082,0,MATCH
+2022-03,Attendances over 4hrs Type 1,507216,507216,0,MATCH
+2022-03,Attendances over 4hrs Type 2,1157,1157,0,MATCH
+2022-03,Attendances over 4hrs Other Department,33315,33315,0,MATCH
+2022-03,Attendances over 4hrs Booked Appointments Type 1,6919,6919,0,MATCH
+2022-03,Attendances over 4hrs Booked Appointments Type 2,0,0,0,MATCH
+2022-03,Attendances over 4hrs Booked Appointments Other Department,1166,1166,0,MATCH
+2022-03,Patients who have waited 4-12 hs from DTA to admission,113792,113792,0,MATCH
+2022-03,Patients who have waited 12+ hrs from DTA to admission,22506,22506,0,MATCH
+2022-03,Emergency admissions via A&E - Type 1,374562,374562,0,MATCH
+2022-03,Emergency admissions via A&E - Type 2,1258,1258,0,MATCH
+2022-03,Emergency admissions via A&E - Other A&E department,5728,5728,0,MATCH
+2022-03,Other emergency admissions,132707,132707,0,MATCH
+2022-04,A&E attendances Type 1,1279545,1279545,0,MATCH
+2022-04,A&E attendances Type 2,37777,37777,0,MATCH
+2022-04,A&E attendances Other A&E Department,640069,640069,0,MATCH
+2022-04,A&E attendances Booked Appointments Type 1,32835,32835,0,MATCH
+2022-04,A&E attendances Booked Appointments Type 2,121,121,0,MATCH
+2022-04,A&E attendances Booked Appointments Other Department,38449,38449,0,MATCH
+2022-04,Attendances over 4hrs Type 1,466330,466330,0,MATCH
+2022-04,Attendances over 4hrs Type 2,1233,1233,0,MATCH
+2022-04,Attendances over 4hrs Other Department,29040,29040,0,MATCH
+2022-04,Attendances over 4hrs Booked Appointments Type 1,6306,6306,0,MATCH
+2022-04,Attendances over 4hrs Booked Appointments Type 2,0,0,0,MATCH
+2022-04,Attendances over 4hrs Booked Appointments Other Department,839,839,0,MATCH
+2022-04,Patients who have waited 4-12 hs from DTA to admission,107425,107425,0,MATCH
+2022-04,Patients who have waited 12+ hrs from DTA to admission,24179,24179,0,MATCH
+2022-04,Emergency admissions via A&E - Type 1,352982,352982,0,MATCH
+2022-04,Emergency admissions via A&E - Type 2,1156,1156,0,MATCH
+2022-04,Emergency admissions via A&E - Other A&E department,5793,5793,0,MATCH
+2022-04,Other emergency admissions,119848,119848,0,MATCH
+2022-05,A&E attendances Type 1,1402115,1402115,0,MATCH
+2022-05,A&E attendances Type 2,41726,41726,0,MATCH
+2022-05,A&E attendances Other A&E Department,713623,713623,0,MATCH
+2022-05,A&E attendances Booked Appointments Type 1,35306,35306,0,MATCH
+2022-05,A&E attendances Booked Appointments Type 2,148,148,0,MATCH
+2022-05,A&E attendances Booked Appointments Other Department,40135,40135,0,MATCH
+2022-05,Attendances over 4hrs Type 1,496422,496422,0,MATCH
+2022-05,Attendances over 4hrs Type 2,1182,1182,0,MATCH
+2022-05,Attendances over 4hrs Other Department,36196,36196,0,MATCH
+2022-05,Attendances over 4hrs Booked Appointments Type 1,6800,6800,0,MATCH
+2022-05,Attendances over 4hrs Booked Appointments Type 2,0,0,0,MATCH
+2022-05,Attendances over 4hrs Booked Appointments Other Department,1089,1089,0,MATCH
+2022-05,Patients who have waited 4-12 hs from DTA to admission,105661,105661,0,MATCH
+2022-05,Patients who have waited 12+ hrs from DTA to admission,19657,19657,0,MATCH
+2022-05,Emergency admissions via A&E - Type 1,377496,377496,0,MATCH
+2022-05,Emergency admissions via A&E - Type 2,1276,1276,0,MATCH
+2022-05,Emergency admissions via A&E - Other A&E department,6015,6015,0,MATCH
+2022-05,Other emergency admissions,132924,132924,0,MATCH
+2022-06,A&E attendances Type 1,1367904,1367904,0,MATCH
+2022-06,A&E attendances Type 2,40782,40782,0,MATCH
+2022-06,A&E attendances Other A&E Department,709681,709681,0,MATCH
+2022-06,A&E attendances Booked Appointments Type 1,32760,32760,0,MATCH
+2022-06,A&E attendances Booked Appointments Type 2,128,128,0,MATCH
+2022-06,A&E attendances Booked Appointments Other Department,40436,40436,0,MATCH
+2022-06,Attendances over 4hrs Type 1,499682,499682,0,MATCH
+2022-06,Attendances over 4hrs Type 2,1130,1130,0,MATCH
+2022-06,Attendances over 4hrs Other Department,38074,38074,0,MATCH
+2022-06,Attendances over 4hrs Booked Appointments Type 1,6536,6536,0,MATCH
+2022-06,Attendances over 4hrs Booked Appointments Type 2,0,0,0,MATCH
+2022-06,Attendances over 4hrs Booked Appointments Other Department,979,979,0,MATCH
+2022-06,Patients who have waited 4-12 hs from DTA to admission,108340,108340,0,MATCH
+2022-06,Patients who have waited 12+ hrs from DTA to admission,22017,22017,0,MATCH
+2022-06,Emergency admissions via A&E - Type 1,366684,366684,0,MATCH
+2022-06,Emergency admissions via A&E - Type 2,1265,1265,0,MATCH
+2022-06,Emergency admissions via A&E - Other A&E department,5979,5979,0,MATCH
+2022-06,Other emergency admissions,129120,129120,0,MATCH
+2022-07,A&E attendances Type 1,1365647,1365647,0,MATCH
+2022-07,A&E attendances Type 2,39488,39488,0,MATCH
+2022-07,A&E attendances Other A&E Department,704044,704044,0,MATCH
+2022-07,A&E attendances Booked Appointments Type 1,31436,31436,0,MATCH
+2022-07,A&E attendances Booked Appointments Type 2,144,144,0,MATCH
+2022-07,A&E attendances Booked Appointments Other Department,40896,40896,0,MATCH
+2022-07,Attendances over 4hrs Type 1,517491,517491,0,MATCH
+2022-07,Attendances over 4hrs Type 2,1138,1138,0,MATCH
+2022-07,Attendances over 4hrs Other Department,37358,37358,0,MATCH
+2022-07,Attendances over 4hrs Booked Appointments Type 1,6670,6670,0,MATCH
+2022-07,Attendances over 4hrs Booked Appointments Type 2,0,0,0,MATCH
+2022-07,Attendances over 4hrs Booked Appointments Other Department,793,793,0,MATCH
+2022-07,Patients who have waited 4-12 hs from DTA to admission,106680,106680,0,MATCH
+2022-07,Patients who have waited 12+ hrs from DTA to admission,29139,29139,0,MATCH
+2022-07,Emergency admissions via A&E - Type 1,362027,362027,0,MATCH
+2022-07,Emergency admissions via A&E - Type 2,1198,1198,0,MATCH
+2022-07,Emergency admissions via A&E - Other A&E department,6144,6144,0,MATCH
+2022-07,Other emergency admissions,127730,127730,0,MATCH
+2022-08,A&E attendances Type 1,1276713,1276713,0,MATCH
+2022-08,A&E attendances Type 2,40628,40628,0,MATCH
+2022-08,A&E attendances Other A&E Department,627353,627353,0,MATCH
+2022-08,A&E attendances Booked Appointments Type 1,22370,22370,0,MATCH
+2022-08,A&E attendances Booked Appointments Type 2,174,174,0,MATCH
+2022-08,A&E attendances Booked Appointments Other Department,28441,28441,0,MATCH
+2022-08,Attendances over 4hrs Type 1,472617,472617,0,MATCH
+2022-08,Attendances over 4hrs Type 2,1209,1209,0,MATCH
+2022-08,Attendances over 4hrs Other Department,24044,24044,0,MATCH
+2022-08,Attendances over 4hrs Booked Appointments Type 1,4954,4954,0,MATCH
+2022-08,Attendances over 4hrs Booked Appointments Type 2,1,1,0,MATCH
+2022-08,Attendances over 4hrs Booked Appointments Other Department,647,647,0,MATCH
+2022-08,Patients who have waited 4-12 hs from DTA to admission,101458,101458,0,MATCH
+2022-08,Patients who have waited 12+ hrs from DTA to admission,28690,28690,0,MATCH
+2022-08,Emergency admissions via A&E - Type 1,350562,350562,0,MATCH
+2022-08,Emergency admissions via A&E - Type 2,1307,1307,0,MATCH
+2022-08,Emergency admissions via A&E - Other A&E department,5219,5219,0,MATCH
+2022-08,Other emergency admissions,124921,124921,0,MATCH
+2022-09,A&E attendances Type 1,1274680,1274680,0,MATCH
+2022-09,A&E attendances Type 2,40047,40047,0,MATCH
+2022-09,A&E attendances Other A&E Department,635667,635667,0,MATCH
+2022-09,A&E attendances Booked Appointments Type 1,26931,26931,0,MATCH
+2022-09,A&E attendances Booked Appointments Type 2,141,141,0,MATCH
+2022-09,A&E attendances Booked Appointments Other Department,31023,31023,0,MATCH
+2022-09,Attendances over 4hrs Type 1,486460,486460,0,MATCH
+2022-09,Attendances over 4hrs Type 2,1981,1981,0,MATCH
+2022-09,Attendances over 4hrs Other Department,24376,24376,0,MATCH
+2022-09,Attendances over 4hrs Booked Appointments Type 1,5555,5555,0,MATCH
+2022-09,Attendances over 4hrs Booked Appointments Type 2,5,5,0,MATCH
+2022-09,Attendances over 4hrs Booked Appointments Other Department,450,450,0,MATCH
+2022-09,Patients who have waited 4-12 hs from DTA to admission,98810,98810,0,MATCH
+2022-09,Patients who have waited 12+ hrs from DTA to admission,32762,32762,0,MATCH
+2022-09,Emergency admissions via A&E - Type 1,353779,353779,0,MATCH
+2022-09,Emergency admissions via A&E - Type 2,1325,1325,0,MATCH
+2022-09,Emergency admissions via A&E - Other A&E department,5653,5653,0,MATCH
+2022-09,Other emergency admissions,126720,126720,0,MATCH
+2022-10,A&E attendances Type 1,1369912,1369912,0,MATCH
+2022-10,A&E attendances Type 2,41217,41217,0,MATCH
+2022-10,A&E attendances Other A&E Department,709558,709558,0,MATCH
+2022-10,A&E attendances Booked Appointments Type 1,29273,29273,0,MATCH
+2022-10,A&E attendances Booked Appointments Type 2,223,223,0,MATCH
+2022-10,A&E attendances Booked Appointments Other Department,37845,37845,0,MATCH
+2022-10,Attendances over 4hrs Type 1,547480,547480,0,MATCH
+2022-10,Attendances over 4hrs Type 2,1572,1572,0,MATCH
+2022-10,Attendances over 4hrs Other Department,38847,38847,0,MATCH
+2022-10,Attendances over 4hrs Booked Appointments Type 1,6668,6668,0,MATCH
+2022-10,Attendances over 4hrs Booked Appointments Type 2,11,11,0,MATCH
+2022-10,Attendances over 4hrs Booked Appointments Other Department,699,699,0,MATCH
+2022-10,Patients who have waited 4-12 hs from DTA to admission,106993,106993,0,MATCH
+2022-10,Patients who have waited 12+ hrs from DTA to admission,43793,43793,0,MATCH
+2022-10,Emergency admissions via A&E - Type 1,367028,367028,0,MATCH
+2022-10,Emergency admissions via A&E - Type 2,1411,1411,0,MATCH
+2022-10,Emergency admissions via A&E - Other A&E department,6302,6302,0,MATCH
+2022-10,Other emergency admissions,132106,132106,0,MATCH
+2022-11,A&E attendances Type 1,1365415,1365415,0,MATCH
+2022-11,A&E attendances Type 2,42419,42419,0,MATCH
+2022-11,A&E attendances Other A&E Department,702367,702367,0,MATCH
+2022-11,A&E attendances Booked Appointments Type 1,29768,29768,0,MATCH
+2022-11,A&E attendances Booked Appointments Type 2,225,225,0,MATCH
+2022-11,A&E attendances Booked Appointments Other Department,38610,38610,0,MATCH
+2022-11,Attendances over 4hrs Type 1,548514,548514,0,MATCH
+2022-11,Attendances over 4hrs Type 2,1343,1343,0,MATCH
+2022-11,Attendances over 4hrs Other Department,44211,44211,0,MATCH
+2022-11,Attendances over 4hrs Booked Appointments Type 1,7142,7142,0,MATCH
+2022-11,Attendances over 4hrs Booked Appointments Type 2,9,9,0,MATCH
+2022-11,Attendances over 4hrs Booked Appointments Other Department,926,926,0,MATCH
+2022-11,Patients who have waited 4-12 hs from DTA to admission,105819,105819,0,MATCH
+2022-11,Patients who have waited 12+ hrs from DTA to admission,37853,37853,0,MATCH
+2022-11,Emergency admissions via A&E - Type 1,368997,368997,0,MATCH
+2022-11,Emergency admissions via A&E - Type 2,1558,1558,0,MATCH
+2022-11,Emergency admissions via A&E - Other A&E department,6271,6271,0,MATCH
+2022-11,Other emergency admissions,138699,138699,0,MATCH
+2022-12,A&E attendances Type 1,1410227,1410227,0,MATCH
+2022-12,A&E attendances Type 2,36382,36382,0,MATCH
+2022-12,A&E attendances Other A&E Department,774625,774625,0,MATCH
+2022-12,A&E attendances Booked Appointments Type 1,27454,27454,0,MATCH
+2022-12,A&E attendances Booked Appointments Type 2,210,210,0,MATCH
+2022-12,A&E attendances Booked Appointments Other Department,45181,45181,0,MATCH
+2022-12,Attendances over 4hrs Type 1,625830,625830,0,MATCH
+2022-12,Attendances over 4hrs Type 2,1052,1052,0,MATCH
+2022-12,Attendances over 4hrs Other Department,76062,76062,0,MATCH
+2022-12,Attendances over 4hrs Booked Appointments Type 1,7446,7446,0,MATCH
+2022-12,Attendances over 4hrs Booked Appointments Type 2,13,13,0,MATCH
+2022-12,Attendances over 4hrs Booked Appointments Other Department,1478,1478,0,MATCH
+2022-12,Patients who have waited 4-12 hs from DTA to admission,115548,115548,0,MATCH
+2022-12,Patients who have waited 12+ hrs from DTA to admission,54573,54573,0,MATCH
+2022-12,Emergency admissions via A&E - Type 1,378202,378202,0,MATCH
+2022-12,Emergency admissions via A&E - Type 2,1359,1359,0,MATCH
+2022-12,Emergency admissions via A&E - Other A&E department,6171,6171,0,MATCH
+2022-12,Other emergency admissions,131712,131712,0,MATCH
+2023-01,A&E attendances Type 1,1215916,1215916,0,MATCH
+2023-01,A&E attendances Type 2,41804,41804,0,MATCH
+2023-01,A&E attendances Other A&E Department,640325,640325,0,MATCH
+2023-01,A&E attendances Booked Appointments Type 1,27982,27982,0,MATCH
+2023-01,A&E attendances Booked Appointments Type 2,272,272,0,MATCH
+2023-01,A&E attendances Booked Appointments Other Department,42039,42039,0,MATCH
+2023-01,Attendances over 4hrs Type 1,451604,451604,0,MATCH
+2023-01,Attendances over 4hrs Type 2,1443,1443,0,MATCH
+2023-01,Attendances over 4hrs Other Department,23869,23869,0,MATCH
+2023-01,Attendances over 4hrs Booked Appointments Type 1,5559,5559,0,MATCH
+2023-01,Attendances over 4hrs Booked Appointments Type 2,9,9,0,MATCH
+2023-01,Attendances over 4hrs Booked Appointments Other Department,561,561,0,MATCH
+2023-01,Patients who have waited 4-12 hs from DTA to admission,99443,99443,0,MATCH
+2023-01,Patients who have waited 12+ hrs from DTA to admission,42767,42767,0,MATCH
+2023-01,Emergency admissions via A&E - Type 1,364353,364353,0,MATCH
+2023-01,Emergency admissions via A&E - Type 2,1464,1464,0,MATCH
+2023-01,Emergency admissions via A&E - Other A&E department,5386,5386,0,MATCH
+2023-01,Other emergency admissions,137576,137576,0,MATCH
+2023-02,A&E attendances Type 1,1179865,1179865,0,MATCH
+2023-02,A&E attendances Type 2,41406,41406,0,MATCH
+2023-02,A&E attendances Other A&E Department,626322,626322,0,MATCH
+2023-02,A&E attendances Booked Appointments Type 1,26521,26521,0,MATCH
+2023-02,A&E attendances Booked Appointments Type 2,311,311,0,MATCH
+2023-02,A&E attendances Booked Appointments Other Department,39854,39854,0,MATCH
+2023-02,Attendances over 4hrs Type 1,450157,450157,0,MATCH
+2023-02,Attendances over 4hrs Type 2,1737,1737,0,MATCH
+2023-02,Attendances over 4hrs Other Department,28114,28114,0,MATCH
+2023-02,Attendances over 4hrs Booked Appointments Type 1,5745,5745,0,MATCH
+2023-02,Attendances over 4hrs Booked Appointments Type 2,15,15,0,MATCH
+2023-02,Attendances over 4hrs Booked Appointments Other Department,524,524,0,MATCH
+2023-02,Patients who have waited 4-12 hs from DTA to admission,91972,91972,0,MATCH
+2023-02,Patients who have waited 12+ hrs from DTA to admission,34975,34975,0,MATCH
+2023-02,Emergency admissions via A&E - Type 1,339726,339726,0,MATCH
+2023-02,Emergency admissions via A&E - Type 2,1403,1403,0,MATCH
+2023-02,Emergency admissions via A&E - Other A&E department,4993,4993,0,MATCH
+2023-02,Other emergency admissions,126734,126734,0,MATCH
+2023-03,A&E attendances Type 1,1343071,1343071,0,MATCH
+2023-03,A&E attendances Type 2,46252,46252,0,MATCH
+2023-03,A&E attendances Other A&E Department,703898,703898,0,MATCH
+2023-03,A&E attendances Booked Appointments Type 1,29332,29332,0,MATCH
+2023-03,A&E attendances Booked Appointments Type 2,551,551,0,MATCH
+2023-03,A&E attendances Booked Appointments Other Department,42847,42847,0,MATCH
+2023-03,Attendances over 4hrs Type 1,511258,511258,0,MATCH
+2023-03,Attendances over 4hrs Type 2,1364,1364,0,MATCH
+2023-03,Attendances over 4hrs Other Department,30583,30583,0,MATCH
+2023-03,Attendances over 4hrs Booked Appointments Type 1,6557,6557,0,MATCH
+2023-03,Attendances over 4hrs Booked Appointments Type 2,12,12,0,MATCH
+2023-03,Attendances over 4hrs Booked Appointments Other Department,764,764,0,MATCH
+2023-03,Patients who have waited 4-12 hs from DTA to admission,104621,104621,0,MATCH
+2023-03,Patients who have waited 12+ hrs from DTA to admission,39687,39687,0,MATCH
+2023-03,Emergency admissions via A&E - Type 1,381708,381708,0,MATCH
+2023-03,Emergency admissions via A&E - Type 2,1461,1461,0,MATCH
+2023-03,Emergency admissions via A&E - Other A&E department,5198,5198,0,MATCH
+2023-03,Other emergency admissions,143724,143724,0,MATCH
+2023-04,A&E attendances Type 1,1242513,1242513,0,MATCH
+2023-04,A&E attendances Type 2,42090,42090,0,MATCH
+2023-04,A&E attendances Other A&E Department,678249,678249,0,MATCH
+2023-04,A&E attendances Booked Appointments Type 1,28632,28632,0,MATCH
+2023-04,A&E attendances Booked Appointments Type 2,542,542,0,MATCH
+2023-04,A&E attendances Booked Appointments Other Department,42014,42014,0,MATCH
+2023-04,Attendances over 4hrs Type 1,429248,429248,0,MATCH
+2023-04,Attendances over 4hrs Type 2,1428,1428,0,MATCH
+2023-04,Attendances over 4hrs Other Department,24314,24314,0,MATCH
+2023-04,Attendances over 4hrs Booked Appointments Type 1,5221,5221,0,MATCH
+2023-04,Attendances over 4hrs Booked Appointments Type 2,2,2,0,MATCH
+2023-04,Attendances over 4hrs Booked Appointments Other Department,575,575,0,MATCH
+2023-04,Patients who have waited 4-12 hs from DTA to admission,86591,86591,0,MATCH
+2023-04,Patients who have waited 12+ hrs from DTA to admission,26492,26492,0,MATCH
+2023-04,Emergency admissions via A&E - Type 1,363625,363625,0,MATCH
+2023-04,Emergency admissions via A&E - Type 2,1340,1340,0,MATCH
+2023-04,Emergency admissions via A&E - Other A&E department,5150,5150,0,MATCH
+2023-04,Other emergency admissions,120358,120358,0,MATCH
+2023-05,A&E attendances Type 1,1371398,1371398,0,MATCH
+2023-05,A&E attendances Type 2,45304,45304,0,MATCH
+2023-05,A&E attendances Other A&E Department,755065,755065,0,MATCH
+2023-05,A&E attendances Booked Appointments Type 1,29417,29417,0,MATCH
+2023-05,A&E attendances Booked Appointments Type 2,522,522,0,MATCH
+2023-05,A&E attendances Booked Appointments Other Department,44213,44213,0,MATCH
+2023-05,Attendances over 4hrs Type 1,480116,480116,0,MATCH
+2023-05,Attendances over 4hrs Type 2,1622,1622,0,MATCH
+2023-05,Attendances over 4hrs Other Department,32345,32345,0,MATCH
+2023-05,Attendances over 4hrs Booked Appointments Type 1,5486,5486,0,MATCH
+2023-05,Attendances over 4hrs Booked Appointments Type 2,7,7,0,MATCH
+2023-05,Attendances over 4hrs Booked Appointments Other Department,717,717,0,MATCH
+2023-05,Patients who have waited 4-12 hs from DTA to admission,90929,90929,0,MATCH
+2023-05,Patients who have waited 12+ hrs from DTA to admission,31498,31498,0,MATCH
+2023-05,Emergency admissions via A&E - Type 1,388202,388202,0,MATCH
+2023-05,Emergency admissions via A&E - Type 2,1338,1338,0,MATCH
+2023-05,Emergency admissions via A&E - Other A&E department,5548,5548,0,MATCH
+2023-05,Other emergency admissions,133847,133847,0,MATCH
+2023-06,A&E attendances Type 1,1361908,1361908,0,MATCH
+2023-06,A&E attendances Type 2,45718,45718,0,MATCH
+2023-06,A&E attendances Other A&E Department,748929,748929,0,MATCH
+2023-06,A&E attendances Booked Appointments Type 1,27101,27101,0,MATCH
+2023-06,A&E attendances Booked Appointments Type 2,478,478,0,MATCH
+2023-06,A&E attendances Booked Appointments Other Department,41592,41592,0,MATCH
+2023-06,Attendances over 4hrs Type 1,546811,546811,0,MATCH
+2023-06,Attendances over 4hrs Type 2,1895,1895,0,MATCH
+2023-06,Attendances over 4hrs Other Department,36299,36299,0,MATCH
+2023-06,Attendances over 4hrs Booked Appointments Type 1,6488,6488,0,MATCH
+2023-06,Attendances over 4hrs Booked Appointments Type 2,9,9,0,MATCH
+2023-06,Attendances over 4hrs Booked Appointments Other Department,969,969,0,MATCH
+2023-06,Patients who have waited 4-12 hs from DTA to admission,87303,87303,0,MATCH
+2023-06,Patients who have waited 12+ hrs from DTA to admission,26488,26488,0,MATCH
+2023-06,Emergency admissions via A&E - Type 1,381815,381815,0,MATCH
+2023-06,Emergency admissions via A&E - Type 2,1403,1403,0,MATCH
+2023-06,Emergency admissions via A&E - Other A&E department,4754,4754,0,MATCH
+2023-06,Other emergency admissions,134751,134751,0,MATCH
+2023-07,A&E attendances Type 1,1353639,1353639,0,MATCH
+2023-07,A&E attendances Type 2,44954,44954,0,MATCH
+2023-07,A&E attendances Other A&E Department,731198,731198,0,MATCH
+2023-07,A&E attendances Booked Appointments Type 1,26215,26215,0,MATCH
+2023-07,A&E attendances Booked Appointments Type 2,559,559,0,MATCH
+2023-07,A&E attendances Booked Appointments Other Department,43222,43222,0,MATCH
+2023-07,Attendances over 4hrs Type 1,533044,533044,0,MATCH
+2023-07,Attendances over 4hrs Type 2,1840,1840,0,MATCH
+2023-07,Attendances over 4hrs Other Department,29194,29194,0,MATCH
+2023-07,Attendances over 4hrs Booked Appointments Type 1,6330,6330,0,MATCH
+2023-07,Attendances over 4hrs Booked Appointments Type 2,9,9,0,MATCH
+2023-07,Attendances over 4hrs Booked Appointments Other Department,856,856,0,MATCH
+2023-07,Patients who have waited 4-12 hs from DTA to admission,84844,84844,0,MATCH
+2023-07,Patients who have waited 12+ hrs from DTA to admission,23396,23396,0,MATCH
+2023-07,Emergency admissions via A&E - Type 1,391312,391312,0,MATCH
+2023-07,Emergency admissions via A&E - Type 2,1383,1383,0,MATCH
+2023-07,Emergency admissions via A&E - Other A&E department,7719,7719,0,MATCH
+2023-07,Other emergency admissions,134268,134268,0,MATCH
+2023-08,A&E attendances Type 1,1298205,1298205,0,MATCH
+2023-08,A&E attendances Type 2,43269,43269,0,MATCH
+2023-08,A&E attendances Other A&E Department,700826,700826,0,MATCH
+2023-08,A&E attendances Booked Appointments Type 1,25442,25442,0,MATCH
+2023-08,A&E attendances Booked Appointments Type 2,654,654,0,MATCH
+2023-08,A&E attendances Booked Appointments Other Department,41465,41465,0,MATCH
+2023-08,Attendances over 4hrs Type 1,535399,535399,0,MATCH
+2023-08,Attendances over 4hrs Type 2,1545,1545,0,MATCH
+2023-08,Attendances over 4hrs Other Department,25286,25286,0,MATCH
+2023-08,Attendances over 4hrs Booked Appointments Type 1,6053,6053,0,MATCH
+2023-08,Attendances over 4hrs Booked Appointments Type 2,12,12,0,MATCH
+2023-08,Attendances over 4hrs Booked Appointments Other Department,723,723,0,MATCH
+2023-08,Patients who have waited 4-12 hs from DTA to admission,91252,91252,0,MATCH
+2023-08,Patients who have waited 12+ hrs from DTA to admission,27710,27710,0,MATCH
+2023-08,Emergency admissions via A&E - Type 1,384233,384233,0,MATCH
+2023-08,Emergency admissions via A&E - Type 2,1403,1403,0,MATCH
+2023-08,Emergency admissions via A&E - Other A&E department,4206,4206,0,MATCH
+2023-08,Other emergency admissions,134039,134039,0,MATCH
+2023-09,A&E attendances Type 1,1344730,1344730,0,MATCH
+2023-09,A&E attendances Type 2,42135,42135,0,MATCH
+2023-09,A&E attendances Other A&E Department,716971,716971,0,MATCH
+2023-09,A&E attendances Booked Appointments Type 1,24315,24315,0,MATCH
+2023-09,A&E attendances Booked Appointments Type 2,496,496,0,MATCH
+2023-09,A&E attendances Booked Appointments Other Department,41399,41399,0,MATCH
+2023-09,Attendances over 4hrs Type 1,573540,573540,0,MATCH
+2023-09,Attendances over 4hrs Type 2,1738,1738,0,MATCH
+2023-09,Attendances over 4hrs Other Department,31799,31799,0,MATCH
+2023-09,Attendances over 4hrs Booked Appointments Type 1,6314,6314,0,MATCH
+2023-09,Attendances over 4hrs Booked Appointments Type 2,6,6,0,MATCH
+2023-09,Attendances over 4hrs Booked Appointments Other Department,756,756,0,MATCH
+2023-09,Patients who have waited 4-12 hs from DTA to admission,92728,92728,0,MATCH
+2023-09,Patients who have waited 12+ hrs from DTA to admission,32228,32228,0,MATCH
+2023-09,Emergency admissions via A&E - Type 1,383234,383234,0,MATCH
+2023-09,Emergency admissions via A&E - Type 2,1325,1325,0,MATCH
+2023-09,Emergency admissions via A&E - Other A&E department,4372,4372,0,MATCH
+2023-09,Other emergency admissions,132297,132297,0,MATCH
+2023-10,A&E attendances Type 1,1385546,1385546,0,MATCH
+2023-10,A&E attendances Type 2,44176,44176,0,MATCH
+2023-10,A&E attendances Other A&E Department,723089,723089,0,MATCH
+2023-10,A&E attendances Booked Appointments Type 1,28051,28051,0,MATCH
+2023-10,A&E attendances Booked Appointments Type 2,593,593,0,MATCH
+2023-10,A&E attendances Booked Appointments Other Department,42865,42865,0,MATCH
+2023-10,Attendances over 4hrs Type 1,615845,615845,0,MATCH
+2023-10,Attendances over 4hrs Type 2,1900,1900,0,MATCH
+2023-10,Attendances over 4hrs Other Department,33636,33636,0,MATCH
+2023-10,Attendances over 4hrs Booked Appointments Type 1,8011,8011,0,MATCH
+2023-10,Attendances over 4hrs Booked Appointments Type 2,5,5,0,MATCH
+2023-10,Attendances over 4hrs Booked Appointments Other Department,902,902,0,MATCH
+2023-10,Patients who have waited 4-12 hs from DTA to admission,100316,100316,0,MATCH
+2023-10,Patients who have waited 12+ hrs from DTA to admission,43534,43534,0,MATCH
+2023-10,Emergency admissions via A&E - Type 1,401524,401524,0,MATCH
+2023-10,Emergency admissions via A&E - Type 2,1431,1431,0,MATCH
+2023-10,Emergency admissions via A&E - Other A&E department,4386,4386,0,MATCH
+2023-10,Other emergency admissions,139530,139530,0,MATCH
+2023-11,A&E attendances Type 1,1357117,1357117,0,MATCH
+2023-11,A&E attendances Type 2,41799,41799,0,MATCH
+2023-11,A&E attendances Other A&E Department,696834,696834,0,MATCH
+2023-11,A&E attendances Booked Appointments Type 1,28891,28891,0,MATCH
+2023-11,A&E attendances Booked Appointments Type 2,566,566,0,MATCH
+2023-11,A&E attendances Booked Appointments Other Department,42377,42377,0,MATCH
+2023-11,Attendances over 4hrs Type 1,610050,610050,0,MATCH
+2023-11,Attendances over 4hrs Type 2,1874,1874,0,MATCH
+2023-11,Attendances over 4hrs Other Department,33087,33087,0,MATCH
+2023-11,Attendances over 4hrs Booked Appointments Type 1,8502,8502,0,MATCH
+2023-11,Attendances over 4hrs Booked Appointments Type 2,14,14,0,MATCH
+2023-11,Attendances over 4hrs Booked Appointments Other Department,673,673,0,MATCH
+2023-11,Patients who have waited 4-12 hs from DTA to admission,103431,103431,0,MATCH
+2023-11,Patients who have waited 12+ hrs from DTA to admission,42503,42503,0,MATCH
+2023-11,Emergency admissions via A&E - Type 1,396755,396755,0,MATCH
+2023-11,Emergency admissions via A&E - Type 2,1452,1452,0,MATCH
+2023-11,Emergency admissions via A&E - Other A&E department,4319,4319,0,MATCH
+2023-11,Other emergency admissions,142117,142117,0,MATCH
+2023-12,A&E attendances Type 1,1355782,1355782,0,MATCH
+2023-12,A&E attendances Type 2,37696,37696,0,MATCH
+2023-12,A&E attendances Other A&E Department,716480,716480,0,MATCH
+2023-12,A&E attendances Booked Appointments Type 1,28438,28438,0,MATCH
+2023-12,A&E attendances Booked Appointments Type 2,1586,1586,0,MATCH
+2023-12,A&E attendances Booked Appointments Other Department,44936,44936,0,MATCH
+2023-12,Attendances over 4hrs Type 1,619155,619155,0,MATCH
+2023-12,Attendances over 4hrs Type 2,1567,1567,0,MATCH
+2023-12,Attendances over 4hrs Other Department,36514,36514,0,MATCH
+2023-12,Attendances over 4hrs Booked Appointments Type 1,8223,8223,0,MATCH
+2023-12,Attendances over 4hrs Booked Appointments Type 2,4,4,0,MATCH
+2023-12,Attendances over 4hrs Booked Appointments Other Department,799,799,0,MATCH
+2023-12,Patients who have waited 4-12 hs from DTA to admission,104247,104247,0,MATCH
+2023-12,Patients who have waited 12+ hrs from DTA to admission,43858,43858,0,MATCH
+2023-12,Emergency admissions via A&E - Type 1,406833,406833,0,MATCH
+2023-12,Emergency admissions via A&E - Type 2,1327,1327,0,MATCH
+2023-12,Emergency admissions via A&E - Other A&E department,4164,4164,0,MATCH
+2023-12,Other emergency admissions,133819,133819,0,MATCH
+2024-01,A&E attendances Type 1,1368973,1368973,0,MATCH
+2024-01,A&E attendances Type 2,42202,42202,0,MATCH
+2024-01,A&E attendances Other A&E Department,742025,742025,0,MATCH
+2024-01,A&E attendances Booked Appointments Type 1,29002,29002,0,MATCH
+2024-01,A&E attendances Booked Appointments Type 2,633,633,0,MATCH
+2024-01,A&E attendances Booked Appointments Other Department,47990,47990,0,MATCH
+2024-01,Attendances over 4hrs Type 1,614746,614746,0,MATCH
+2024-01,Attendances over 4hrs Type 2,1726,1726,0,MATCH
+2024-01,Attendances over 4hrs Other Department,35598,35598,0,MATCH
+2024-01,Attendances over 4hrs Booked Appointments Type 1,8231,8231,0,MATCH
+2024-01,Attendances over 4hrs Booked Appointments Type 2,10,10,0,MATCH
+2024-01,Attendances over 4hrs Booked Appointments Other Department,796,796,0,MATCH
+2024-01,Patients who have waited 4-12 hs from DTA to admission,104423,104423,0,MATCH
+2024-01,Patients who have waited 12+ hrs from DTA to admission,54312,54312,0,MATCH
+2024-01,Emergency admissions via A&E - Type 1,403208,403208,0,MATCH
+2024-01,Emergency admissions via A&E - Type 2,1399,1399,0,MATCH
+2024-01,Emergency admissions via A&E - Other A&E department,4561,4561,0,MATCH
+2024-01,Other emergency admissions,147086,147086,0,MATCH
+2024-02,A&E attendances Type 1,1319340,1319340,0,MATCH
+2024-02,A&E attendances Type 2,43324,43324,0,MATCH
+2024-02,A&E attendances Other A&E Department,720909,720909,0,MATCH
+2024-02,A&E attendances Booked Appointments Type 1,28302,28302,0,MATCH
+2024-02,A&E attendances Booked Appointments Type 2,544,544,0,MATCH
+2024-02,A&E attendances Booked Appointments Other Department,45403,45403,0,MATCH
+2024-02,Attendances over 4hrs Type 1,578793,578793,0,MATCH
+2024-02,Attendances over 4hrs Type 2,2370,2370,0,MATCH
+2024-02,Attendances over 4hrs Other Department,35953,35953,0,MATCH
+2024-02,Attendances over 4hrs Booked Appointments Type 1,8028,8028,0,MATCH
+2024-02,Attendances over 4hrs Booked Appointments Type 2,13,13,0,MATCH
+2024-02,Attendances over 4hrs Booked Appointments Other Department,775,775,0,MATCH
+2024-02,Patients who have waited 4-12 hs from DTA to admission,95047,95047,0,MATCH
+2024-02,Patients who have waited 12+ hrs from DTA to admission,44420,44420,0,MATCH
+2024-02,Emergency admissions via A&E - Type 1,382132,382132,0,MATCH
+2024-02,Emergency admissions via A&E - Type 2,1465,1465,0,MATCH
+2024-02,Emergency admissions via A&E - Other A&E department,4231,4231,0,MATCH
+2024-02,Other emergency admissions,139515,139515,0,MATCH
+2024-03,A&E attendances Type 1,1431679,1431679,0,MATCH
+2024-03,A&E attendances Type 2,48349,48349,0,MATCH
+2024-03,A&E attendances Other A&E Department,809675,809675,0,MATCH
+2024-03,A&E attendances Booked Appointments Type 1,31199,31199,0,MATCH
+2024-03,A&E attendances Booked Appointments Type 2,573,573,0,MATCH
+2024-03,A&E attendances Booked Appointments Other Department,48746,48746,0,MATCH
+2024-03,Attendances over 4hrs Type 1,564319,564319,0,MATCH
+2024-03,Attendances over 4hrs Type 2,1926,1926,0,MATCH
+2024-03,Attendances over 4hrs Other Department,33397,33397,0,MATCH
+2024-03,Attendances over 4hrs Booked Appointments Type 1,7668,7668,0,MATCH
+2024-03,Attendances over 4hrs Booked Appointments Type 2,8,8,0,MATCH
+2024-03,Attendances over 4hrs Booked Appointments Other Department,756,756,0,MATCH
+2024-03,Patients who have waited 4-12 hs from DTA to admission,97223,97223,0,MATCH
+2024-03,Patients who have waited 12+ hrs from DTA to admission,42972,42972,0,MATCH
+2024-03,Emergency admissions via A&E - Type 1,420025,420025,0,MATCH
+2024-03,Emergency admissions via A&E - Type 2,1515,1515,0,MATCH
+2024-03,Emergency admissions via A&E - Other A&E department,4614,4614,0,MATCH
+2024-03,Other emergency admissions,141302,141302,0,MATCH
+2024-04,A&E attendances Type 1,1341059,1341059,0,MATCH
+2024-04,A&E attendances Type 2,50804,50804,0,MATCH
+2024-04,A&E attendances Other A&E Department,771286,771286,0,MATCH
+2024-04,A&E attendances Booked Appointments Type 1,30969,30969,0,MATCH
+2024-04,A&E attendances Booked Appointments Type 2,691,691,0,MATCH
+2024-04,A&E attendances Booked Appointments Other Department,45859,45859,0,MATCH
+2024-04,Attendances over 4hrs Type 1,534979,534979,0,MATCH
+2024-04,Attendances over 4hrs Type 2,1866,1866,0,MATCH
+2024-04,Attendances over 4hrs Other Department,26223,26223,0,MATCH
+2024-04,Attendances over 4hrs Booked Appointments Type 1,7976,7976,0,MATCH
+2024-04,Attendances over 4hrs Booked Appointments Type 2,12,12,0,MATCH
+2024-04,Attendances over 4hrs Booked Appointments Other Department,629,629,0,MATCH
+2024-04,Patients who have waited 4-12 hs from DTA to admission,92266,92266,0,MATCH
+2024-04,Patients who have waited 12+ hrs from DTA to admission,42078,42078,0,MATCH
+2024-04,Emergency admissions via A&E - Type 1,398116,398116,0,MATCH
+2024-04,Emergency admissions via A&E - Type 2,1442,1442,0,MATCH
+2024-04,Emergency admissions via A&E - Other A&E department,4376,4376,0,MATCH
+2024-04,Other emergency admissions,140179,140179,0,MATCH
+2024-05,A&E attendances Type 1,1439178,1439178,0,MATCH
+2024-05,A&E attendances Type 2,50602,50602,0,MATCH
+2024-05,A&E attendances Other A&E Department,841230,841230,0,MATCH
+2024-05,A&E attendances Booked Appointments Type 1,33543,33543,0,MATCH
+2024-05,A&E attendances Booked Appointments Type 2,644,644,0,MATCH
+2024-05,A&E attendances Booked Appointments Other Department,51095,51095,0,MATCH
+2024-05,Attendances over 4hrs Type 1,584646,584646,0,MATCH
+2024-05,Attendances over 4hrs Type 2,2024,2024,0,MATCH
+2024-05,Attendances over 4hrs Other Department,32615,32615,0,MATCH
+2024-05,Attendances over 4hrs Booked Appointments Type 1,9149,9149,0,MATCH
+2024-05,Attendances over 4hrs Booked Appointments Type 2,13,13,0,MATCH
+2024-05,Attendances over 4hrs Booked Appointments Other Department,738,738,0,MATCH
+2024-05,Patients who have waited 4-12 hs from DTA to admission,96215,96215,0,MATCH
+2024-05,Patients who have waited 12+ hrs from DTA to admission,42555,42555,0,MATCH
+2024-05,Emergency admissions via A&E - Type 1,414156,414156,0,MATCH
+2024-05,Emergency admissions via A&E - Type 2,1490,1490,0,MATCH
+2024-05,Emergency admissions via A&E - Other A&E department,4558,4558,0,MATCH
+2024-05,Other emergency admissions,144489,144489,0,MATCH
+2024-06,A&E attendances Type 1,1374917,1374917,0,MATCH
+2024-06,A&E attendances Type 2,48707,48707,0,MATCH
+2024-06,A&E attendances Other A&E Department,792016,792016,0,MATCH
+2024-06,A&E attendances Booked Appointments Type 1,30741,30741,0,MATCH
+2024-06,A&E attendances Booked Appointments Type 2,675,675,0,MATCH
+2024-06,A&E attendances Booked Appointments Other Department,47009,47009,0,MATCH
+2024-06,Attendances over 4hrs Type 1,547250,547250,0,MATCH
+2024-06,Attendances over 4hrs Type 2,1841,1841,0,MATCH
+2024-06,Attendances over 4hrs Other Department,25423,25423,0,MATCH
+2024-06,Attendances over 4hrs Booked Appointments Type 1,7803,7803,0,MATCH
+2024-06,Attendances over 4hrs Booked Appointments Type 2,13,13,0,MATCH
+2024-06,Attendances over 4hrs Booked Appointments Other Department,626,626,0,MATCH
+2024-06,Patients who have waited 4-12 hs from DTA to admission,90008,90008,0,MATCH
+2024-06,Patients who have waited 12+ hrs from DTA to admission,38106,38106,0,MATCH
+2024-06,Emergency admissions via A&E - Type 1,396204,396204,0,MATCH
+2024-06,Emergency admissions via A&E - Type 2,1406,1406,0,MATCH
+2024-06,Emergency admissions via A&E - Other A&E department,4445,4445,0,MATCH
+2024-06,Other emergency admissions,134829,134829,0,MATCH
+2024-07,A&E attendances Type 1,1399224,1399224,0,MATCH
+2024-07,A&E attendances Type 2,50788,50788,0,MATCH
+2024-07,A&E attendances Other A&E Department,801318,801318,0,MATCH
+2024-07,A&E attendances Booked Appointments Type 1,26345,26345,0,MATCH
+2024-07,A&E attendances Booked Appointments Type 2,711,711,0,MATCH
+2024-07,A&E attendances Booked Appointments Other Department,46446,46446,0,MATCH
+2024-07,Attendances over 4hrs Type 1,543499,543499,0,MATCH
+2024-07,Attendances over 4hrs Type 2,1799,1799,0,MATCH
+2024-07,Attendances over 4hrs Other Department,22927,22927,0,MATCH
+2024-07,Attendances over 4hrs Booked Appointments Type 1,7401,7401,0,MATCH
+2024-07,Attendances over 4hrs Booked Appointments Type 2,25,25,0,MATCH
+2024-07,Attendances over 4hrs Booked Appointments Other Department,510,510,0,MATCH
+2024-07,Patients who have waited 4-12 hs from DTA to admission,92524,92524,0,MATCH
+2024-07,Patients who have waited 12+ hrs from DTA to admission,36806,36806,0,MATCH
+2024-07,Emergency admissions via A&E - Type 1,405655,405655,0,MATCH
+2024-07,Emergency admissions via A&E - Type 2,1479,1479,0,MATCH
+2024-07,Emergency admissions via A&E - Other A&E department,4648,4648,0,MATCH
+2024-07,Other emergency admissions,140686,140686,0,MATCH
+2024-08,A&E attendances Type 1,1292332,1292332,0,MATCH
+2024-08,A&E attendances Type 2,47731,47731,0,MATCH
+2024-08,A&E attendances Other A&E Department,746162,746162,0,MATCH
+2024-08,A&E attendances Booked Appointments Type 1,27825,27825,0,MATCH
+2024-08,A&E attendances Booked Appointments Type 2,656,656,0,MATCH
+2024-08,A&E attendances Booked Appointments Other Department,46085,46085,0,MATCH
+2024-08,Attendances over 4hrs Type 1,487960,487960,0,MATCH
+2024-08,Attendances over 4hrs Type 2,1553,1553,0,MATCH
+2024-08,Attendances over 4hrs Other Department,14934,14934,0,MATCH
+2024-08,Attendances over 4hrs Booked Appointments Type 1,6539,6539,0,MATCH
+2024-08,Attendances over 4hrs Booked Appointments Type 2,7,7,0,MATCH
+2024-08,Attendances over 4hrs Booked Appointments Other Department,391,391,0,MATCH
+2024-08,Patients who have waited 4-12 hs from DTA to admission,87995,87995,0,MATCH
+2024-08,Patients who have waited 12+ hrs from DTA to admission,28494,28494,0,MATCH
+2024-08,Emergency admissions via A&E - Type 1,390554,390554,0,MATCH
+2024-08,Emergency admissions via A&E - Type 2,1300,1300,0,MATCH
+2024-08,Emergency admissions via A&E - Other A&E department,4661,4661,0,MATCH
+2024-08,Other emergency admissions,129118,129118,0,MATCH
+2024-09,A&E attendances Type 1,1335923,1335923,0,MATCH
+2024-09,A&E attendances Type 2,47946,47946,0,MATCH
+2024-09,A&E attendances Other A&E Department,757108,757108,0,MATCH
+2024-09,A&E attendances Booked Appointments Type 1,28559,28559,0,MATCH
+2024-09,A&E attendances Booked Appointments Type 2,588,588,0,MATCH
+2024-09,A&E attendances Booked Appointments Other Department,44093,44093,0,MATCH
+2024-09,Attendances over 4hrs Type 1,541162,541162,0,MATCH
+2024-09,Attendances over 4hrs Type 2,2160,2160,0,MATCH
+2024-09,Attendances over 4hrs Other Department,19757,19757,0,MATCH
+2024-09,Attendances over 4hrs Booked Appointments Type 1,7360,7360,0,MATCH
+2024-09,Attendances over 4hrs Booked Appointments Type 2,13,13,0,MATCH
+2024-09,Attendances over 4hrs Booked Appointments Other Department,436,436,0,MATCH
+2024-09,Patients who have waited 4-12 hs from DTA to admission,91752,91752,0,MATCH
+2024-09,Patients who have waited 12+ hrs from DTA to admission,38880,38880,0,MATCH
+2024-09,Emergency admissions via A&E - Type 1,393406,393406,0,MATCH
+2024-09,Emergency admissions via A&E - Type 2,1323,1323,0,MATCH
+2024-09,Emergency admissions via A&E - Other A&E department,4677,4677,0,MATCH
+2024-09,Other emergency admissions,131418,131418,0,MATCH
+2024-10,A&E attendances Type 1,1422317,1422317,0,MATCH
+2024-10,A&E attendances Type 2,49017,49017,0,MATCH
+2024-10,A&E attendances Other A&E Department,809058,809058,0,MATCH
+2024-10,A&E attendances Booked Appointments Type 1,30925,30925,0,MATCH
+2024-10,A&E attendances Booked Appointments Type 2,700,700,0,MATCH
+2024-10,A&E attendances Booked Appointments Other Department,48519,48519,0,MATCH
+2024-10,Attendances over 4hrs Type 1,601329,601329,0,MATCH
+2024-10,Attendances over 4hrs Type 2,2163,2163,0,MATCH
+2024-10,Attendances over 4hrs Other Department,23500,23500,0,MATCH
+2024-10,Attendances over 4hrs Booked Appointments Type 1,7784,7784,0,MATCH
+2024-10,Attendances over 4hrs Booked Appointments Type 2,20,20,0,MATCH
+2024-10,Attendances over 4hrs Booked Appointments Other Department,546,546,0,MATCH
+2024-10,Patients who have waited 4-12 hs from DTA to admission,99172,99172,0,MATCH
+2024-10,Patients who have waited 12+ hrs from DTA to admission,49616,49616,0,MATCH
+2024-10,Emergency admissions via A&E - Type 1,415893,415893,0,MATCH
+2024-10,Emergency admissions via A&E - Type 2,1327,1327,0,MATCH
+2024-10,Emergency admissions via A&E - Other A&E department,4828,4828,0,MATCH
+2024-10,Other emergency admissions,145400,145400,0,MATCH
+2024-11,A&E attendances Type 1,1396858,1396858,0,MATCH
+2024-11,A&E attendances Type 2,46656,46656,0,MATCH
+2024-11,A&E attendances Other A&E Department,791064,791064,0,MATCH
+2024-11,A&E attendances Booked Appointments Type 1,31192,31192,0,MATCH
+2024-11,A&E attendances Booked Appointments Type 2,607,607,0,MATCH
+2024-11,A&E attendances Booked Appointments Other Department,48621,48621,0,MATCH
+2024-11,Attendances over 4hrs Type 1,605301,605301,0,MATCH
+2024-11,Attendances over 4hrs Type 2,2007,2007,0,MATCH
+2024-11,Attendances over 4hrs Other Department,27102,27102,0,MATCH
+2024-11,Attendances over 4hrs Booked Appointments Type 1,9021,9021,0,MATCH
+2024-11,Attendances over 4hrs Booked Appointments Type 2,9,9,0,MATCH
+2024-11,Attendances over 4hrs Booked Appointments Other Department,556,556,0,MATCH
+2024-11,Patients who have waited 4-12 hs from DTA to admission,94991,94991,0,MATCH
+2024-11,Patients who have waited 12+ hrs from DTA to admission,45791,45791,0,MATCH
+2024-11,Emergency admissions via A&E - Type 1,407955,407955,0,MATCH
+2024-11,Emergency admissions via A&E - Type 2,1267,1267,0,MATCH
+2024-11,Emergency admissions via A&E - Other A&E department,4887,4887,0,MATCH
+2024-11,Other emergency admissions,138052,138052,0,MATCH
+2024-12,A&E attendances Type 1,1407530,1407530,0,MATCH
+2024-12,A&E attendances Type 2,43471,43471,0,MATCH
+2024-12,A&E attendances Other A&E Department,807451,807451,0,MATCH
+2024-12,A&E attendances Booked Appointments Type 1,32781,32781,0,MATCH
+2024-12,A&E attendances Booked Appointments Type 2,570,570,0,MATCH
+2024-12,A&E attendances Booked Appointments Other Department,54131,54131,0,MATCH
+2024-12,Attendances over 4hrs Type 1,633815,633815,0,MATCH
+2024-12,Attendances over 4hrs Type 2,1547,1547,0,MATCH
+2024-12,Attendances over 4hrs Other Department,31873,31873,0,MATCH
+2024-12,Attendances over 4hrs Booked Appointments Type 1,9567,9567,0,MATCH
+2024-12,Attendances over 4hrs Booked Appointments Type 2,9,9,0,MATCH
+2024-12,Attendances over 4hrs Booked Appointments Other Department,662,662,0,MATCH
+2024-12,Patients who have waited 4-12 hs from DTA to admission,100482,100482,0,MATCH
+2024-12,Patients who have waited 12+ hrs from DTA to admission,54207,54207,0,MATCH
+2024-12,Emergency admissions via A&E - Type 1,411161,411161,0,MATCH
+2024-12,Emergency admissions via A&E - Type 2,1239,1239,0,MATCH
+2024-12,Emergency admissions via A&E - Other A&E department,4667,4667,0,MATCH
+2024-12,Other emergency admissions,135525,135525,0,MATCH
+2025-01,A&E attendances Type 1,1326670,1326670,0,MATCH
+2025-01,A&E attendances Type 2,48785,48785,0,MATCH
+2025-01,A&E attendances Other A&E Department,757845,757845,0,MATCH
+2025-01,A&E attendances Booked Appointments Type 1,32356,32356,0,MATCH
+2025-01,A&E attendances Booked Appointments Type 2,701,701,0,MATCH
+2025-01,A&E attendances Booked Appointments Other Department,51773,51773,0,MATCH
+2025-01,Attendances over 4hrs Type 1,566267,566267,0,MATCH
+2025-01,Attendances over 4hrs Type 2,1901,1901,0,MATCH
+2025-01,Attendances over 4hrs Other Department,21658,21658,0,MATCH
+2025-01,Attendances over 4hrs Booked Appointments Type 1,8371,8371,0,MATCH
+2025-01,Attendances over 4hrs Booked Appointments Type 2,24,24,0,MATCH
+2025-01,Attendances over 4hrs Booked Appointments Other Department,525,525,0,MATCH
+2025-01,Patients who have waited 4-12 hs from DTA to admission,98053,98053,0,MATCH
+2025-01,Patients who have waited 12+ hrs from DTA to admission,61529,61529,0,MATCH
+2025-01,Emergency admissions via A&E - Type 1,400481,400481,0,MATCH
+2025-01,Emergency admissions via A&E - Type 2,1353,1353,0,MATCH
+2025-01,Emergency admissions via A&E - Other A&E department,4394,4394,0,MATCH
+2025-01,Other emergency admissions,142547,142547,0,MATCH
+2025-02,A&E attendances Type 1,1241931,1241931,0,MATCH
+2025-02,A&E attendances Type 2,45071,45071,0,MATCH
+2025-02,A&E attendances Other A&E Department,721461,721461,0,MATCH
+2025-02,A&E attendances Booked Appointments Type 1,29405,29405,0,MATCH
+2025-02,A&E attendances Booked Appointments Type 2,611,611,0,MATCH
+2025-02,A&E attendances Booked Appointments Other Department,49592,49592,0,MATCH
+2025-02,Attendances over 4hrs Type 1,521619,521619,0,MATCH
+2025-02,Attendances over 4hrs Type 2,1851,1851,0,MATCH
+2025-02,Attendances over 4hrs Other Department,22206,22206,0,MATCH
+2025-02,Attendances over 4hrs Booked Appointments Type 1,7883,7883,0,MATCH
+2025-02,Attendances over 4hrs Booked Appointments Type 2,30,30,0,MATCH
+2025-02,Attendances over 4hrs Booked Appointments Other Department,557,557,0,MATCH
+2025-02,Patients who have waited 4-12 hs from DTA to admission,83614,83614,0,MATCH
+2025-02,Patients who have waited 12+ hrs from DTA to admission,47623,47623,0,MATCH
+2025-02,Emergency admissions via A&E - Type 1,362605,362605,0,MATCH
+2025-02,Emergency admissions via A&E - Type 2,1252,1252,0,MATCH
+2025-02,Emergency admissions via A&E - Other A&E department,3721,3721,0,MATCH
+2025-02,Other emergency admissions,128517,128517,0,MATCH
+2025-03,A&E attendances Type 1,1418235,1418235,0,MATCH
+2025-03,A&E attendances Type 2,50646,50646,0,MATCH
+2025-03,A&E attendances Other A&E Department,830779,830779,0,MATCH
+2025-03,A&E attendances Booked Appointments Type 1,32451,32451,0,MATCH
+2025-03,A&E attendances Booked Appointments Type 2,591,591,0,MATCH
+2025-03,A&E attendances Booked Appointments Other Department,56362,56362,0,MATCH
+2025-03,Attendances over 4hrs Type 1,558656,558656,0,MATCH
+2025-03,Attendances over 4hrs Type 2,2283,2283,0,MATCH
+2025-03,Attendances over 4hrs Other Department,27899,27899,0,MATCH
+2025-03,Attendances over 4hrs Booked Appointments Type 1,8339,8339,0,MATCH
+2025-03,Attendances over 4hrs Booked Appointments Type 2,25,25,0,MATCH
+2025-03,Attendances over 4hrs Booked Appointments Other Department,546,546,0,MATCH
+2025-03,Patients who have waited 4-12 hs from DTA to admission,87191,87191,0,MATCH
+2025-03,Patients who have waited 12+ hrs from DTA to admission,46766,46766,0,MATCH
+2025-03,Emergency admissions via A&E - Type 1,404354,404354,0,MATCH
+2025-03,Emergency admissions via A&E - Type 2,1366,1366,0,MATCH
+2025-03,Emergency admissions via A&E - Other A&E department,4569,4569,0,MATCH
+2025-03,Other emergency admissions,140840,140840,0,MATCH
+2025-04,A&E attendances Type 1,1354959,1354959,0,MATCH
+2025-04,A&E attendances Type 2,49112,49112,0,MATCH
+2025-04,A&E attendances Other A&E Department,805616,805616,0,MATCH
+2025-04,A&E attendances Booked Appointments Type 1,33654,33654,0,MATCH
+2025-04,A&E attendances Booked Appointments Type 2,626,626,0,MATCH
+2025-04,A&E attendances Booked Appointments Other Department,53454,53454,0,MATCH
+2025-04,Attendances over 4hrs Type 1,544820,544820,0,MATCH
+2025-04,Attendances over 4hrs Type 2,2227,2227,0,MATCH
+2025-04,Attendances over 4hrs Other Department,24080,24080,0,MATCH
+2025-04,Attendances over 4hrs Booked Appointments Type 1,7638,7638,0,MATCH
+2025-04,Attendances over 4hrs Booked Appointments Type 2,42,42,0,MATCH
+2025-04,Attendances over 4hrs Booked Appointments Other Department,515,515,0,MATCH
+2025-04,Patients who have waited 4-12 hs from DTA to admission,87208,87208,0,MATCH
+2025-04,Patients who have waited 12+ hrs from DTA to admission,44648,44648,0,MATCH
+2025-04,Emergency admissions via A&E - Type 1,390648,390648,0,MATCH
+2025-04,Emergency admissions via A&E - Type 2,1418,1418,0,MATCH
+2025-04,Emergency admissions via A&E - Other A&E department,4226,4226,0,MATCH
+2025-04,Other emergency admissions,131938,131938,0,MATCH
+2025-05,A&E attendances Type 1,1419306,1419306,0,MATCH
+2025-05,A&E attendances Type 2,50370,50370,0,MATCH
+2025-05,A&E attendances Other A&E Department,839622,839622,0,MATCH
+2025-05,A&E attendances Booked Appointments Type 1,34174,34174,0,MATCH
+2025-05,A&E attendances Booked Appointments Type 2,549,549,0,MATCH
+2025-05,A&E attendances Booked Appointments Other Department,53508,53508,0,MATCH
+2025-05,Attendances over 4hrs Type 1,555982,555982,0,MATCH
+2025-05,Attendances over 4hrs Type 2,2262,2262,0,MATCH
+2025-05,Attendances over 4hrs Other Department,23131,23131,0,MATCH
+2025-05,Attendances over 4hrs Booked Appointments Type 1,7821,7821,0,MATCH
+2025-05,Attendances over 4hrs Booked Appointments Type 2,35,35,0,MATCH
+2025-05,Attendances over 4hrs Booked Appointments Other Department,504,504,0,MATCH
+2025-05,Patients who have waited 4-12 hs from DTA to admission,87144,87144,0,MATCH
+2025-05,Patients who have waited 12+ hrs from DTA to admission,42891,42891,0,MATCH
+2025-05,Emergency admissions via A&E - Type 1,403026,403026,0,MATCH
+2025-05,Emergency admissions via A&E - Type 2,1440,1440,0,MATCH
+2025-05,Emergency admissions via A&E - Other A&E department,5060,5060,0,MATCH
+2025-05,Other emergency admissions,135602,135602,0,MATCH
+2025-06,A&E attendances Type 1,1395330,1395330,0,MATCH
+2025-06,A&E attendances Type 2,50843,50843,0,MATCH
+2025-06,A&E attendances Other A&E Department,821993,821993,0,MATCH
+2025-06,A&E attendances Booked Appointments Type 1,33233,33233,0,MATCH
+2025-06,A&E attendances Booked Appointments Type 2,775,775,0,MATCH
+2025-06,A&E attendances Booked Appointments Other Department,49407,49407,0,MATCH
+2025-06,Attendances over 4hrs Type 1,539355,539355,0,MATCH
+2025-06,Attendances over 4hrs Type 2,2030,2030,0,MATCH
+2025-06,Attendances over 4hrs Other Department,25349,25349,0,MATCH
+2025-06,Attendances over 4hrs Booked Appointments Type 1,7516,7516,0,MATCH
+2025-06,Attendances over 4hrs Booked Appointments Type 2,13,13,0,MATCH
+2025-06,Attendances over 4hrs Booked Appointments Other Department,546,546,0,MATCH
+2025-06,Patients who have waited 4-12 hs from DTA to admission,79488,79488,0,MATCH
+2025-06,Patients who have waited 12+ hrs from DTA to admission,38683,38683,0,MATCH
+2025-06,Emergency admissions via A&E - Type 1,395628,395628,0,MATCH
+2025-06,Emergency admissions via A&E - Type 2,1389,1389,0,MATCH
+2025-06,Emergency admissions via A&E - Other A&E department,4863,4863,0,MATCH
+2025-06,Other emergency admissions,134061,134061,0,MATCH
+2025-07,A&E attendances Type 1,1433180,1433180,0,MATCH
+2025-07,A&E attendances Type 2,52429,52429,0,MATCH
+2025-07,A&E attendances Other A&E Department,834765,834765,0,MATCH
+2025-07,A&E attendances Booked Appointments Type 1,35870,35870,0,MATCH
+2025-07,A&E attendances Booked Appointments Type 2,560,560,0,MATCH
+2025-07,A&E attendances Booked Appointments Other Department,52062,52062,0,MATCH
+2025-07,Attendances over 4hrs Type 1,534607,534607,0,MATCH
+2025-07,Attendances over 4hrs Type 2,2407,2407,0,MATCH
+2025-07,Attendances over 4hrs Other Department,23271,23271,0,MATCH
+2025-07,Attendances over 4hrs Booked Appointments Type 1,7553,7553,0,MATCH
+2025-07,Attendances over 4hrs Booked Appointments Type 2,23,23,0,MATCH
+2025-07,Attendances over 4hrs Booked Appointments Other Department,443,443,0,MATCH
+2025-07,Patients who have waited 4-12 hs from DTA to admission,80075,80075,0,MATCH
+2025-07,Patients who have waited 12+ hrs from DTA to admission,35467,35467,0,MATCH
+2025-07,Emergency admissions via A&E - Type 1,412893,412893,0,MATCH
+2025-07,Emergency admissions via A&E - Type 2,1443,1443,0,MATCH
+2025-07,Emergency admissions via A&E - Other A&E department,5115,5115,0,MATCH
+2025-07,Other emergency admissions,139941,139941,0,MATCH
+2025-08,A&E attendances Type 1,1351631,1351631,0,MATCH
+2025-08,A&E attendances Type 2,48479,48479,0,MATCH
+2025-08,A&E attendances Other A&E Department,782613,782613,0,MATCH
+2025-08,A&E attendances Booked Appointments Type 1,32239,32239,0,MATCH
+2025-08,A&E attendances Booked Appointments Type 2,605,605,0,MATCH
+2025-08,A&E attendances Booked Appointments Other Department,51370,51370,0,MATCH
+2025-08,Attendances over 4hrs Type 1,518160,518160,0,MATCH
+2025-08,Attendances over 4hrs Type 2,2245,2245,0,MATCH
+2025-08,Attendances over 4hrs Other Department,18635,18635,0,MATCH
+2025-08,Attendances over 4hrs Booked Appointments Type 1,7382,7382,0,MATCH
+2025-08,Attendances over 4hrs Booked Appointments Type 2,28,28,0,MATCH
+2025-08,Attendances over 4hrs Booked Appointments Other Department,421,421,0,MATCH
+2025-08,Patients who have waited 4-12 hs from DTA to admission,79917,79917,0,MATCH
+2025-08,Patients who have waited 12+ hrs from DTA to admission,35909,35909,0,MATCH
+2025-08,Emergency admissions via A&E - Type 1,394548,394548,0,MATCH
+2025-08,Emergency admissions via A&E - Type 2,1261,1261,0,MATCH
+2025-08,Emergency admissions via A&E - Other A&E department,5111,5111,0,MATCH
+2025-08,Other emergency admissions,125479,125479,0,MATCH
+2025-09,A&E attendances Type 1,1385429,1385429,0,MATCH
+2025-09,A&E attendances Type 2,50116,50116,0,MATCH
+2025-09,A&E attendances Other A&E Department,791957,791957,0,MATCH
+2025-09,A&E attendances Booked Appointments Type 1,32011,32011,0,MATCH
+2025-09,A&E attendances Booked Appointments Type 2,617,617,0,MATCH
+2025-09,A&E attendances Booked Appointments Other Department,50092,50092,0,MATCH
+2025-09,Attendances over 4hrs Type 1,543443,543443,0,MATCH
+2025-09,Attendances over 4hrs Type 2,2122,2122,0,MATCH
+2025-09,Attendances over 4hrs Other Department,22158,22158,0,MATCH
+2025-09,Attendances over 4hrs Booked Appointments Type 1,8221,8221,0,MATCH
+2025-09,Attendances over 4hrs Booked Appointments Type 2,29,29,0,MATCH
+2025-09,Attendances over 4hrs Booked Appointments Other Department,418,418,0,MATCH
+2025-09,Patients who have waited 4-12 hs from DTA to admission,84239,84239,0,MATCH
+2025-09,Patients who have waited 12+ hrs from DTA to admission,44765,44765,0,MATCH
+2025-09,Emergency admissions via A&E - Type 1,395054,395054,0,MATCH
+2025-09,Emergency admissions via A&E - Type 2,1343,1343,0,MATCH
+2025-09,Emergency admissions via A&E - Other A&E department,5349,5349,0,MATCH
+2025-09,Other emergency admissions,133834,133834,0,MATCH
+2025-10,A&E attendances Type 1,1449480,1449480,0,MATCH
+2025-10,A&E attendances Type 2,54142,54142,0,MATCH
+2025-10,A&E attendances Other A&E Department,814120,814120,0,MATCH
+2025-10,A&E attendances Booked Appointments Type 1,31742,31742,0,MATCH
+2025-10,A&E attendances Booked Appointments Type 2,614,614,0,MATCH
+2025-10,A&E attendances Booked Appointments Other Department,51168,51168,0,MATCH
+2025-10,Attendances over 4hrs Type 1,581850,581850,0,MATCH
+2025-10,Attendances over 4hrs Type 2,2864,2864,0,MATCH
+2025-10,Attendances over 4hrs Other Department,25926,25926,0,MATCH
+2025-10,Attendances over 4hrs Booked Appointments Type 1,8762,8762,0,MATCH
+2025-10,Attendances over 4hrs Booked Appointments Type 2,36,36,0,MATCH
+2025-10,Attendances over 4hrs Booked Appointments Other Department,436,436,0,MATCH
+2025-10,Patients who have waited 4-12 hs from DTA to admission,88420,88420,0,MATCH
+2025-10,Patients who have waited 12+ hrs from DTA to admission,54326,54326,0,MATCH
+2025-10,Emergency admissions via A&E - Type 1,406141,406141,0,MATCH
+2025-10,Emergency admissions via A&E - Type 2,1364,1364,0,MATCH
+2025-10,Emergency admissions via A&E - Other A&E department,5511,5511,0,MATCH
+2025-10,Other emergency admissions,140483,140483,0,MATCH
+2025-11,A&E attendances Type 1,1420033,1420033,0,MATCH
+2025-11,A&E attendances Type 2,49176,49176,0,MATCH
+2025-11,A&E attendances Other A&E Department,794353,794353,0,MATCH
+2025-11,A&E attendances Booked Appointments Type 1,30111,30111,0,MATCH
+2025-11,A&E attendances Booked Appointments Type 2,549,549,0,MATCH
+2025-11,A&E attendances Booked Appointments Other Department,52824,52824,0,MATCH
+2025-11,Attendances over 4hrs Type 1,566630,566630,0,MATCH
+2025-11,Attendances over 4hrs Type 2,2432,2432,0,MATCH
+2025-11,Attendances over 4hrs Other Department,27004,27004,0,MATCH
+2025-11,Attendances over 4hrs Booked Appointments Type 1,8420,8420,0,MATCH
+2025-11,Attendances over 4hrs Booked Appointments Type 2,43,43,0,MATCH
+2025-11,Attendances over 4hrs Booked Appointments Other Department,611,611,0,MATCH
+2025-11,Patients who have waited 4-12 hs from DTA to admission,83151,83151,0,MATCH
+2025-11,Patients who have waited 12+ hrs from DTA to admission,50648,50648,0,MATCH
+2025-11,Emergency admissions via A&E - Type 1,390459,390459,0,MATCH
+2025-11,Emergency admissions via A&E - Type 2,1314,1314,0,MATCH
+2025-11,Emergency admissions via A&E - Other A&E department,4971,4971,0,MATCH
+2025-11,Other emergency admissions,135003,135003,0,MATCH
+2025-12,A&E attendances Type 1,1407641,1407641,0,MATCH
+2025-12,A&E attendances Type 2,47040,47040,0,MATCH
+2025-12,A&E attendances Other A&E Department,785243,785243,0,MATCH
+2025-12,A&E attendances Booked Appointments Type 1,30566,30566,0,MATCH
+2025-12,A&E attendances Booked Appointments Type 2,482,482,0,MATCH
+2025-12,A&E attendances Booked Appointments Other Department,55167,55167,0,MATCH
+2025-12,Attendances over 4hrs Type 1,572315,572315,0,MATCH
+2025-12,Attendances over 4hrs Type 2,2015,2015,0,MATCH
+2025-12,Attendances over 4hrs Other Department,25269,25269,0,MATCH
+2025-12,Attendances over 4hrs Booked Appointments Type 1,8378,8378,0,MATCH
+2025-12,Attendances over 4hrs Booked Appointments Type 2,25,25,0,MATCH
+2025-12,Attendances over 4hrs Booked Appointments Other Department,473,473,0,MATCH
+2025-12,Patients who have waited 4-12 hs from DTA to admission,86988,86988,0,MATCH
+2025-12,Patients who have waited 12+ hrs from DTA to admission,50789,50789,0,MATCH
+2025-12,Emergency admissions via A&E - Type 1,399039,399039,0,MATCH
+2025-12,Emergency admissions via A&E - Type 2,1312,1312,0,MATCH
+2025-12,Emergency admissions via A&E - Other A&E department,5020,5020,0,MATCH
+2025-12,Other emergency admissions,136817,136817,0,MATCH
+2026-01,A&E attendances Type 1,1405035,1405035,0,MATCH
+2026-01,A&E attendances Type 2,50161,50161,0,MATCH
+2026-01,A&E attendances Other A&E Department,780500,780500,0,MATCH
+2026-01,A&E attendances Booked Appointments Type 1,29722,29722,0,MATCH
+2026-01,A&E attendances Booked Appointments Type 2,549,549,0,MATCH
+2026-01,A&E attendances Booked Appointments Other Department,53329,53329,0,MATCH
+2026-01,Attendances over 4hrs Type 1,603633,603633,0,MATCH
+2026-01,Attendances over 4hrs Type 2,2457,2457,0,MATCH
+2026-01,Attendances over 4hrs Other Department,23637,23637,0,MATCH
+2026-01,Attendances over 4hrs Booked Appointments Type 1,8742,8742,0,MATCH
+2026-01,Attendances over 4hrs Booked Appointments Type 2,27,27,0,MATCH
+2026-01,Attendances over 4hrs Booked Appointments Other Department,442,442,0,MATCH
+2026-01,Patients who have waited 4-12 hs from DTA to admission,89624,89624,0,MATCH
+2026-01,Patients who have waited 12+ hrs from DTA to admission,71517,71517,0,MATCH
+2026-01,Emergency admissions via A&E - Type 1,395611,395611,0,MATCH
+2026-01,Emergency admissions via A&E - Type 2,1399,1399,0,MATCH
+2026-01,Emergency admissions via A&E - Other A&E department,4932,4932,0,MATCH
+2026-01,Other emergency admissions,144194,144194,0,MATCH
+2026-02,A&E attendances Type 1,1271830,1271830,0,MATCH
+2026-02,A&E attendances Type 2,47756,47756,0,MATCH
+2026-02,A&E attendances Other A&E Department,723986,723986,0,MATCH
+2026-02,A&E attendances Booked Appointments Type 1,26175,26175,0,MATCH
+2026-02,A&E attendances Booked Appointments Type 2,477,477,0,MATCH
+2026-02,A&E attendances Booked Appointments Other Department,47226,47226,0,MATCH
+2026-02,Attendances over 4hrs Type 1,519984,519984,0,MATCH
+2026-02,Attendances over 4hrs Type 2,1914,1914,0,MATCH
+2026-02,Attendances over 4hrs Other Department,19737,19737,0,MATCH
+2026-02,Attendances over 4hrs Booked Appointments Type 1,7252,7252,0,MATCH
+2026-02,Attendances over 4hrs Booked Appointments Type 2,35,35,0,MATCH
+2026-02,Attendances over 4hrs Booked Appointments Other Department,444,444,0,MATCH
+2026-02,Patients who have waited 4-12 hs from DTA to admission,77589,77589,0,MATCH
+2026-02,Patients who have waited 12+ hrs from DTA to admission,54649,54649,0,MATCH
+2026-02,Emergency admissions via A&E - Type 1,355598,355598,0,MATCH
+2026-02,Emergency admissions via A&E - Type 2,1281,1281,0,MATCH
+2026-02,Emergency admissions via A&E - Other A&E department,5051,5051,0,MATCH
+2026-02,Other emergency admissions,131085,131085,0,MATCH
+2026-03,A&E attendances Type 1,1451010,1451010,0,MATCH
+2026-03,A&E attendances Type 2,54862,54862,0,MATCH
+2026-03,A&E attendances Other A&E Department,845475,845475,0,MATCH
+2026-03,A&E attendances Booked Appointments Type 1,27134,27134,0,MATCH
+2026-03,A&E attendances Booked Appointments Type 2,531,531,0,MATCH
+2026-03,A&E attendances Booked Appointments Other Department,53260,53260,0,MATCH
+2026-03,Attendances over 4hrs Type 1,523986,523986,0,MATCH
+2026-03,Attendances over 4hrs Type 2,2035,2035,0,MATCH
+2026-03,Attendances over 4hrs Other Department,23407,23407,0,MATCH
+2026-03,Attendances over 4hrs Booked Appointments Type 1,6793,6793,0,MATCH
+2026-03,Attendances over 4hrs Booked Appointments Type 2,29,29,0,MATCH
+2026-03,Attendances over 4hrs Booked Appointments Other Department,461,461,0,MATCH
+2026-03,Patients who have waited 4-12 hs from DTA to admission,77205,77205,0,MATCH
+2026-03,Patients who have waited 12+ hrs from DTA to admission,46665,46665,0,MATCH
+2026-03,Emergency admissions via A&E - Type 1,402356,402356,0,MATCH
+2026-03,Emergency admissions via A&E - Type 2,1423,1423,0,MATCH
+2026-03,Emergency admissions via A&E - Other A&E department,6226,6226,0,MATCH
+2026-03,Other emergency admissions,143887,143887,0,MATCH
+2026-04,A&E attendances Type 1,1404743,1404743,0,MATCH
+2026-04,A&E attendances Type 2,52203,52203,0,MATCH
+2026-04,A&E attendances Other A&E Department,814606,814606,0,MATCH
+2026-04,A&E attendances Booked Appointments Type 1,26082,26082,0,MATCH
+2026-04,A&E attendances Booked Appointments Type 2,511,511,0,MATCH
+2026-04,A&E attendances Booked Appointments Other Department,47184,47184,0,MATCH
+2026-04,Attendances over 4hrs Type 1,511052,511052,0,MATCH
+2026-04,Attendances over 4hrs Type 2,2278,2278,0,MATCH
+2026-04,Attendances over 4hrs Other Department,21262,21262,0,MATCH
+2026-04,Attendances over 4hrs Booked Appointments Type 1,6546,6546,0,MATCH
+2026-04,Attendances over 4hrs Booked Appointments Type 2,30,30,0,MATCH
+2026-04,Attendances over 4hrs Booked Appointments Other Department,374,374,0,MATCH
+2026-04,Patients who have waited 4-12 hs from DTA to admission,74866,74866,0,MATCH
+2026-04,Patients who have waited 12+ hrs from DTA to admission,47750,47750,0,MATCH
+2026-04,Emergency admissions via A&E - Type 1,386257,386257,0,MATCH
+2026-04,Emergency admissions via A&E - Type 2,1441,1441,0,MATCH
+2026-04,Emergency admissions via A&E - Other A&E department,5107,5107,0,MATCH
+2026-04,Other emergency admissions,132855,132855,0,MATCH
+2026-05,A&E attendances Type 1,1466119,1466119,0,MATCH
+2026-05,A&E attendances Type 2,52381,52381,0,MATCH
+2026-05,A&E attendances Other A&E Department,860272,860272,0,MATCH
+2026-05,A&E attendances Booked Appointments Type 1,27226,27226,0,MATCH
+2026-05,A&E attendances Booked Appointments Type 2,439,439,0,MATCH
+2026-05,A&E attendances Booked Appointments Other Department,50961,50961,0,MATCH
+2026-05,Attendances over 4hrs Type 1,562494,562494,0,MATCH
+2026-05,Attendances over 4hrs Type 2,2082,2082,0,MATCH
+2026-05,Attendances over 4hrs Other Department,25264,25264,0,MATCH
+2026-05,Attendances over 4hrs Booked Appointments Type 1,6892,6892,0,MATCH
+2026-05,Attendances over 4hrs Booked Appointments Type 2,33,33,0,MATCH
+2026-05,Attendances over 4hrs Booked Appointments Other Department,558,558,0,MATCH
+2026-05,Patients who have waited 4-12 hs from DTA to admission,78378,78378,0,MATCH
+2026-05,Patients who have waited 12+ hrs from DTA to admission,50212,50212,0,MATCH
+2026-05,Emergency admissions via A&E - Type 1,395328,395328,0,MATCH
+2026-05,Emergency admissions via A&E - Type 2,1417,1417,0,MATCH
+2026-05,Emergency admissions via A&E - Other A&E department,5088,5088,0,MATCH
+2026-05,Other emergency admissions,131447,131447,0,MATCH
+2026-06,A&E attendances Type 1,1461113,1461113,0,MATCH
+2026-06,A&E attendances Type 2,54348,54348,0,MATCH
+2026-06,A&E attendances Other A&E Department,846810,846810,0,MATCH
+2026-06,A&E attendances Booked Appointments Type 1,27489,27489,0,MATCH
+2026-06,A&E attendances Booked Appointments Type 2,542,542,0,MATCH
+2026-06,A&E attendances Booked Appointments Other Department,47604,47604,0,MATCH
+2026-06,Attendances over 4hrs Type 1,569323,569323,0,MATCH
+2026-06,Attendances over 4hrs Type 2,2061,2061,0,MATCH
+2026-06,Attendances over 4hrs Other Department,29400,29400,0,MATCH
+2026-06,Attendances over 4hrs Booked Appointments Type 1,7576,7576,0,MATCH
+2026-06,Attendances over 4hrs Booked Appointments Type 2,30,30,0,MATCH
+2026-06,Attendances over 4hrs Booked Appointments Other Department,527,527,0,MATCH
+2026-06,Patients who have waited 4-12 hs from DTA to admission,77353,77353,0,MATCH
+2026-06,Patients who have waited 12+ hrs from DTA to admission,49466,49466,0,MATCH
+2026-06,Emergency admissions via A&E - Type 1,390733,390733,0,MATCH
+2026-06,Emergency admissions via A&E - Type 2,1431,1431,0,MATCH
+2026-06,Emergency admissions via A&E - Other A&E department,5790,5790,0,MATCH
+2026-06,Other emergency admissions,136799,136799,0,MATCH
+2026-07,A&E attendances Type 1,1489424,1489424,0,MATCH
+2026-07,A&E attendances Type 2,56912,56912,0,MATCH
+2026-07,A&E attendances Other A&E Department,865079,865079,0,MATCH
+2026-07,A&E attendances Booked Appointments Type 1,27717,27717,0,MATCH
+2026-07,A&E attendances Booked Appointments Type 2,460,460,0,MATCH
+2026-07,A&E attendances Booked Appointments Other Department,47988,47988,0,MATCH
+2026-07,Attendances over 4hrs Type 1,573607,573607,0,MATCH
+2026-07,Attendances over 4hrs Type 2,2252,2252,0,MATCH
+2026-07,Attendances over 4hrs Other Department,28907,28907,0,MATCH
+2026-07,Attendances over 4hrs Booked Appointments Type 1,7253,7253,0,MATCH
+2026-07,Attendances over 4hrs Booked Appointments Type 2,32,32,0,MATCH
+2026-07,Attendances over 4hrs Booked Appointments Other Department,528,528,0,MATCH
+2026-07,Patients who have waited 4-12 hs from DTA to admission,77306,77306,0,MATCH
+2026-07,Patients who have waited 12+ hrs from DTA to admission,47438,47438,0,MATCH
+2026-07,Emergency admissions via A&E - Type 1,400260,400260,0,MATCH
+2026-07,Emergency admissions via A&E - Type 2,1598,1598,0,MATCH
+2026-07,Emergency admissions via A&E - Other A&E department,6172,6172,0,MATCH
+2026-07,Other emergency admissions,139798,139798,0,MATCH
+2026-08,A&E attendances Type 1,1407535,1407535,0,MATCH
+2026-08,A&E attendances Type 2,52483,52483,0,MATCH
+2026-08,A&E attendances Other A&E Department,805309,805309,0,MATCH
+2026-08,A&E attendances Booked Appointments Type 1,28590,28590,0,MATCH
+2026-08,A&E attendances Booked Appointments Type 2,399,399,0,MATCH
+2026-08,A&E attendances Booked Appointments Other Department,48643,48643,0,MATCH
+2026-08,Attendances over 4hrs Type 1,550970,550970,0,MATCH
+2026-08,Attendances over 4hrs Type 2,2123,2123,0,MATCH
+2026-08,Attendances over 4hrs Other Department,23460,23460,0,MATCH
+2026-08,Attendances over 4hrs Booked Appointments Type 1,7707,7707,0,MATCH
+2026-08,Attendances over 4hrs Booked Appointments Type 2,24,24,0,MATCH
+2026-08,Attendances over 4hrs Booked Appointments Other Department,483,483,0,MATCH
+2026-08,Patients who have waited 4-12 hs from DTA to admission,73599,73599,0,MATCH
+2026-08,Patients who have waited 12+ hrs from DTA to admission,44951,44951,0,MATCH
+2026-08,Emergency admissions via A&E - Type 1,386024,386024,0,MATCH
+2026-08,Emergency admissions via A&E - Type 2,1522,1522,0,MATCH
+2026-08,Emergency admissions via A&E - Other A&E department,5323,5323,0,MATCH
+2026-08,Other emergency admissions,124999,124999,0,MATCH
+2026-09,A&E attendances Type 1,1475440,1475440,0,MATCH
+2026-09,A&E attendances Type 2,55014,55014,0,MATCH
+2026-09,A&E attendances Other A&E Department,839337,839337,0,MATCH
+2026-09,A&E attendances Booked Appointments Type 1,27709,27709,0,MATCH
+2026-09,A&E attendances Booked Appointments Type 2,499,499,0,MATCH
+2026-09,A&E attendances Booked Appointments Other Department,46744,46744,0,MATCH
+2026-09,Attendances over 4hrs Type 1,584630,584630,0,MATCH
+2026-09,Attendances over 4hrs Type 2,3059,3059,0,MATCH
+2026-09,Attendances over 4hrs Other Department,30470,30470,0,MATCH
+2026-09,Attendances over 4hrs Booked Appointments Type 1,7952,7952,0,MATCH
+2026-09,Attendances over 4hrs Booked Appointments Type 2,59,59,0,MATCH
+2026-09,Attendances over 4hrs Booked Appointments Other Department,581,581,0,MATCH
+2026-09,Patients who have waited 4-12 hs from DTA to admission,78617,78617,0,MATCH
+2026-09,Patients who have waited 12+ hrs from DTA to admission,50582,50582,0,MATCH
+2026-09,Emergency admissions via A&E - Type 1,394675,394675,0,MATCH
+2026-09,Emergency admissions via A&E - Type 2,1534,1534,0,MATCH
+2026-09,Emergency admissions via A&E - Other A&E department,5107,5107,0,MATCH
+2026-09,Other emergency admissions,134842,134842,0,MATCH

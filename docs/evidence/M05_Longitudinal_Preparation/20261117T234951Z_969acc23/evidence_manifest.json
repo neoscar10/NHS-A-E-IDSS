@@ -1,0 +1,128 @@
+{
+  "milestone": "M05",
+  "run_id": "20261117T234951Z_969acc23",
+  "purpose": "Prepare provider-month continuity and time-aware Type 1 forecasting candidates.",
+  "created_utc": "2026-11-17T23:49:51+00:00",
+  "git_head": "5eaf2334350a4ffb7f1b5b660af4ac3c2ad50f31",
+  "git_note": "HEAD alone does not identify uncommitted changes; use input hashes.",
+  "python": "3.14.6",
+  "packages": {
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.0.3",
+    "ipykernel": "6.31.0"
+  },
+  "status": "COMPLETE",
+  "note": "Calendar preparation complete; cohort assumptions and identity advisories remain subject to review.",
+  "inputs": {
+    "src/data/m05_longitudinal.py": {
+      "status": "PRESENT",
+      "bytes": 17089,
+      "sha256": "4639e946bccb8d2efb5cf86c12e2ae017f3554ef7d5e72ce219eabe89854f88f"
+    },
+    "src/data/m04_preprocess.py": {
+      "status": "PRESENT",
+      "bytes": 17435,
+      "sha256": "d70d905147b6203f186019ea318d1c3a01ac26013a98006e3ec5096a2bdb8baa"
+    },
+    "src/utils/evidence_exporter.py": {
+      "status": "PRESENT",
+      "bytes": 11989,
+      "sha256": "9bd9cf8ed958bf32aa8f295ae1b35af6da9882113c48395f286f7c0d2875b1af"
+    },
+    "notebooks/04_m05_longitudinal_preparation.ipynb": {
+      "status": "PRESENT",
+      "bytes": 10410,
+      "sha256": "f7108158e2ea6d4a2886fe12e12a012c612a6960799edcc1246dd634585ec42d"
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/m04_summary.json": {
+      "status": "PRESENT",
+      "bytes": 1930,
+      "sha256": "f011f01e06a5b6bc85915978406fa29a684fc3e273d4b336f10c5b9877b4e657"
+    },
+    "docs/evidence/M04_Preprocessing/20261117T233306Z_1573d5bb/evidence_manifest.json": {
+      "status": "PRESENT",
+      "bytes": 18372,
+      "sha256": "25268b9c53b32395b6b46af675ba5ea7f831c33cea672183555f4d7c2edd4f17"
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/ae_provider_monthly.csv": {
+      "status": "PRESENT",
+      "bytes": 3154168,
+      "sha256": "031b092b9d586f8b9ca148d695189120914ac454039191a0ac8aea36a47dfe1f"
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/ae_national_monthly.csv": {
+      "status": "PRESENT",
+      "bytes": 15585,
+      "sha256": "89fccca02974684751af9d8324165fd1901aea8cb5de6206df6f8ca789c9bc16"
+    },
+    "tests/test_m05_longitudinal.py": {
+      "status": "PRESENT",
+      "bytes": 4240,
+      "sha256": "ea7b34f3b59df0cd7d5b5eb2d0c96583337cc251740a141f254f0b2be1ceb980"
+    },
+    "data/processed/m05/20261117T234951Z_969acc23/ae_provider_calendar.csv": {
+      "status": "PRESENT",
+      "bytes": 3934248,
+      "sha256": "16500cdcd05cb1cd4cac4e8b6b973c5586770696c2cf115f5157b9051a146aef"
+    },
+    "data/processed/m05/20261117T234951Z_969acc23/ae_provider_calendar.parquet": {
+      "status": "PRESENT",
+      "bytes": 366612,
+      "sha256": "8250d0ecb714f18c3c76fed9436d89df3e9357ad520e38dbb418b72b2cb47bbd"
+    },
+    "data/processed/m05/20261117T234951Z_969acc23/m05_summary.json": {
+      "status": "PRESENT",
+      "bytes": 1124,
+      "sha256": "b28cd903d77b8824337d2762bdfe1763df8841232b7a90b122dabfcf2ecf0f6e"
+    }
+  },
+  "artifacts": {
+    "figures/01_reporting_coverage.png": {
+      "sha256": "8cacf5e798a88c26381141f3aeb9a77cfcef9076854057bc625df7f2029edb2c",
+      "bytes": 169609
+    },
+    "figures/02_time_aware_candidates.png": {
+      "sha256": "7645a3b04ce0ec315a2bd9c980f461083cef7e0eb2e57c2249060ef1a3eb367b",
+      "bytes": 136707
+    },
+    "figures/03_provider_gap_review.png": {
+      "sha256": "cb45be24f0a78ecb6a423650781e3ef4eea1c077014c8151ca8c39c64c27acc0",
+      "bytes": 94561
+    },
+    "reports/m05_decisions.csv": {
+      "sha256": "dc80e78e27c3e950b758a56db7f56ae9c442ff0c5e5e1de85185a388c0507122",
+      "bytes": 858
+    },
+    "reports/m05_monthly_eligibility.csv": {
+      "sha256": "6e85fbb427cb69641fa7348f58d3e62a98fed1bc49c1508e5103ccaa0beff956",
+      "bytes": 2313
+    },
+    "reports/m05_provider_continuity.csv": {
+      "sha256": "2d9ff988f742bae88c773f1b436be09f6f2daf109e20d84afff51bf19119ce3b",
+      "bytes": 23720
+    },
+    "reports/m05_research_report.md": {
+      "sha256": "c1a9120fdabce9474622e7a8c26b4911f44a5af7859fedd7907c7d82b5f7be71",
+      "bytes": 1253
+    },
+    "reports/m05_summary.json": {
+      "sha256": "b28cd903d77b8824337d2762bdfe1763df8841232b7a90b122dabfcf2ecf0f6e",
+      "bytes": 1124
+    },
+    "test_results/pytest_01.txt": {
+      "sha256": "3f86b74afa71347314809168d7a79c149938f66d7208cba37d47e190fde7c33e",
+      "bytes": 369
+    }
+  },
+  "test_runs": [
+    {
+      "tests": [
+        "tests/test_m05_longitudinal.py"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-17T23:49:54+00:00"
+    }
+  ],
+  "finished_utc": "2026-11-17T23:49:59+00:00"
+}

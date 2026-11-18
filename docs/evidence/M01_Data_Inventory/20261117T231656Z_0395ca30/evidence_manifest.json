@@ -1,0 +1,79 @@
+{
+  "milestone": "M01",
+  "run_id": "20261117T231656Z_0395ca30",
+  "purpose": "Archive completed source inventory and visualise saved coverage.",
+  "created_utc": "2026-11-17T23:16:56+00:00",
+  "git_head": "5eaf2334350a4ffb7f1b5b660af4ac3c2ad50f31",
+  "git_note": "HEAD alone does not identify uncommitted changes; use input hashes.",
+  "python": "3.14.6",
+  "packages": {
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.0.3",
+    "ipykernel": "6.31.0"
+  },
+  "status": "COMPLETE",
+  "note": "Existing reports preserved byte-for-byte. Charts use saved report values. Tests, if enabled, are fresh synthetic-fixture tests.",
+  "inputs": {
+    "src/data/m01_m02.py": {
+      "status": "PRESENT",
+      "bytes": 15214,
+      "sha256": "ba96f27a71f67d798f93eb6ac835a31f5e4e75c3dc3fc91628e5a1b4f323b040"
+    },
+    "src/utils/evidence_exporter.py": {
+      "status": "PRESENT",
+      "bytes": 11989,
+      "sha256": "9bd9cf8ed958bf32aa8f295ae1b35af6da9882113c48395f286f7c0d2875b1af"
+    },
+    "docs/source_manifest.csv": {
+      "status": "PRESENT",
+      "bytes": 63476,
+      "sha256": "54e6bed0089de116139bcc22e3fb0f7f5b5d629b688f89bd68616e67ecf27721"
+    },
+    "docs/m01_coverage.json": {
+      "status": "PRESENT",
+      "bytes": 499,
+      "sha256": "9ca6418dcf52873fef8daf66815c9f8476d330da21df8513841fcd775382bbae"
+    },
+    "tests/test_m01_m02.py": {
+      "status": "PRESENT",
+      "bytes": 6390,
+      "sha256": "e3a722f2d7b7d6e4790c422dc4ca75b88c603b54631230d8124ca4d58b570f1e"
+    }
+  },
+  "artifacts": {
+    "figures/01_source_coverage.png": {
+      "sha256": "092d035baf77265225948ae5bbc4012da690a9867ca70899c5aa30de355f0e32",
+      "bytes": 86351
+    },
+    "reports/inventory_interpretation.md": {
+      "sha256": "f76f6ac7c421f60f84895ea1cbae8120c65d642cc0371bbaf33d066d407bc377",
+      "bytes": 257
+    },
+    "reports/m01_coverage.json": {
+      "sha256": "9ca6418dcf52873fef8daf66815c9f8476d330da21df8513841fcd775382bbae",
+      "bytes": 499,
+      "copied_from": "docs/m01_coverage.json"
+    },
+    "reports/source_manifest.csv": {
+      "sha256": "54e6bed0089de116139bcc22e3fb0f7f5b5d629b688f89bd68616e67ecf27721",
+      "bytes": 63476,
+      "copied_from": "docs/source_manifest.csv"
+    },
+    "test_results/pytest_01.txt": {
+      "sha256": "9e14da81d86e578f854ded6e9bf6fbf0a40c2a087c99a8f3bc0d4c80e14569a8",
+      "bytes": 314
+    }
+  },
+  "test_runs": [
+    {
+      "tests": [
+        "tests/test_m01_m02.py"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-17T23:16:58+00:00"
+    }
+  ],
+  "finished_utc": "2026-11-17T23:17:01+00:00"
+}

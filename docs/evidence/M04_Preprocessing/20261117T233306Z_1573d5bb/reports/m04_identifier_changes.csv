@@ -1,0 +1,4 @@
+field,rows_standardised,operation
+org_code,20,trim and uppercase
+org_name,3,trim outer whitespace
+parent_org,9913,trim outer whitespace

@@ -1,0 +1,133 @@
+{
+  "milestone": "M03",
+  "run_id": "20261117T231855Z_f674a660",
+  "purpose": "Re-run unchanged M03 validator and archive research evidence.",
+  "created_utc": "2026-11-17T23:18:55+00:00",
+  "git_head": "5eaf2334350a4ffb7f1b5b660af4ac3c2ad50f31",
+  "git_note": "HEAD alone does not identify uncommitted changes; use input hashes.",
+  "python": "3.14.6",
+  "packages": {
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.0.3",
+    "ipykernel": "6.31.0"
+  },
+  "status": "COMPLETE",
+  "note": "Fresh M03 validation using the staged input. No preprocessing or forecasting performed.",
+  "inputs": {
+    "src/data/m01_m02.py": {
+      "status": "PRESENT",
+      "bytes": 15214,
+      "sha256": "ba96f27a71f67d798f93eb6ac835a31f5e4e75c3dc3fc91628e5a1b4f323b040"
+    },
+    "src/utils/evidence_exporter.py": {
+      "status": "PRESENT",
+      "bytes": 11989,
+      "sha256": "9bd9cf8ed958bf32aa8f295ae1b35af6da9882113c48395f286f7c0d2875b1af"
+    },
+    "docs/source_manifest.csv": {
+      "status": "PRESENT",
+      "bytes": 63476,
+      "sha256": "54e6bed0089de116139bcc22e3fb0f7f5b5d629b688f89bd68616e67ecf27721"
+    },
+    "docs/m01_coverage.json": {
+      "status": "PRESENT",
+      "bytes": 499,
+      "sha256": "9ca6418dcf52873fef8daf66815c9f8476d330da21df8513841fcd775382bbae"
+    },
+    "data/staging/m02_ingestion_summary.json": {
+      "status": "PRESENT",
+      "bytes": 553,
+      "sha256": "85bbaaf868c0a412399d07b6d5b93eaa78e66b6515998c3dcee5dd5d43c0e424"
+    },
+    "data/staging/ae_historical_raw_combined.csv": {
+      "status": "PRESENT",
+      "bytes": 3053562,
+      "sha256": "b73aa39459f32a4b42438c511c4f25856426d4c471180bb09676e3bc5c6dfc9e"
+    },
+    "data/staging/ae_historical_raw_combined.parquet": {
+      "status": "PRESENT",
+      "bytes": 399187,
+      "sha256": "43beeea2e01c793a95f399f00d70a1c9c2fe12c928bae2b9b9c7a9bb31c3920f"
+    },
+    "src/data/m03_validate.py": {
+      "status": "PRESENT",
+      "bytes": 24541,
+      "sha256": "8e05ee5faa8a0d2dc7e655f06b93cadf5ef0f3f27051dcb348f329994951f2e0"
+    },
+    "tests/test_m03_validate.py": {
+      "status": "PRESENT",
+      "bytes": 8538,
+      "sha256": "7f033c7c4c6bd0bd8e17c3f1076386bf7ea9bc0b54f8d65ff868804ef5a3704b"
+    }
+  },
+  "artifacts": {
+    "figures/01_provider_population.png": {
+      "sha256": "15d6b2dc430ab202ae3b67503ecd748da006eb8ec85c33d2f3b870f4543e3f2c",
+      "bytes": 178167
+    },
+    "figures/02_type1_zero_share.png": {
+      "sha256": "1d08a53298f4277b30b0b69f45b83eb6104b5490fe051ca543d84652f832b715",
+      "bytes": 184235
+    },
+    "figures/03_national_reconciliation.png": {
+      "sha256": "62c821334db24bb8e1b39c653714c9186cdab47a8034db403de04ac16fc506d7",
+      "bytes": 84871
+    },
+    "figures/04_provider_reporting_gaps.png": {
+      "sha256": "2a5f451bb2e69063f039dd7e96d049b86626aa3b7e78b6e5b53cdfef5508d88a",
+      "bytes": 125806
+    },
+    "figures/05_type1_activity_patterns.png": {
+      "sha256": "5ff790d3fd0f84b9df5100a6f0cfd64905c62ab7da1c475cc564960d65db4a53",
+      "bytes": 122055
+    },
+    "reports/data/quality/m03_findings.csv": {
+      "sha256": "479a0bc129d48eb1249634a790d6b94fd378911cffe4421ac7365b5363b5a2a4",
+      "bytes": 72
+    },
+    "reports/docs/m03_monthly_profile.csv": {
+      "sha256": "84da4f5baa8505b7267e001bb27454b125109758a0ed288a81fb380387828bd8",
+      "bytes": 2559
+    },
+    "reports/docs/m03_monthly_reconciliation.csv": {
+      "sha256": "7386cb025197d46880361d630b2223c7b67e28ed67749a20d887a865434d2507",
+      "bytes": 71508
+    },
+    "reports/docs/m03_provider_continuity.csv": {
+      "sha256": "8f900dc50d6c0908b2e8ead5f02250c993cfb9e135f57f5a037d273f0496ffad",
+      "bytes": 10147
+    },
+    "reports/docs/m03_quality_report.md": {
+      "sha256": "e999b5b760de29cbdde098abdbc7e5aea99f810c1881009b9d92af8743421c00",
+      "bytes": 1483
+    },
+    "reports/docs/m03_quality_summary.json": {
+      "sha256": "5677798c105c40035b69360f15530f6eae2842591b1248af5a67c9bcf42e26fa",
+      "bytes": 917
+    },
+    "reports/docs/m03_type1_change_candidates.csv": {
+      "sha256": "bc3bd391dcebfb7bba6d234db699e9343df04305c76ad5a79270d9c22d7c451a",
+      "bytes": 100
+    },
+    "reports/m03_preprocessing_decisions.csv": {
+      "sha256": "6cd447689dd000f2a66e16a572d7587551da2d1d39dcc58230d1696ec760bec0",
+      "bytes": 905
+    },
+    "test_results/pytest_01.txt": {
+      "sha256": "06daff0ddf38604ff625db74dd3bc256606913b2f9dedb3307843e4053e969f8",
+      "bytes": 419
+    }
+  },
+  "test_runs": [
+    {
+      "tests": [
+        "tests/test_m03_validate.py"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-17T23:19:03+00:00"
+    }
+  ],
+  "finished_utc": "2026-11-17T23:19:07+00:00"
+}

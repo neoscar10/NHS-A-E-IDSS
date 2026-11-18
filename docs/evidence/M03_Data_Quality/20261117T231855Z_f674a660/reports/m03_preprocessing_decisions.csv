@@ -1,0 +1,8 @@
+Evidence area,Measured result,Proposed next decision,Milestone
+Core validity / provenance,0 error groups; manifest MATCH,Resolve errors or unavailable checks before accepting a cleaned input,M04
+National aggregate rows,57 total rows; 1026 matches,Keep a separate national table; exclude TOTAL from provider modelling,M04
+Dates and types,57 months; 18 count measures,"Standardise month dates, headers, textual IDs and integer counts; preserve lineage",M04
+Recorded zeros,38.9% of provider records,Keep zeros distinct from missing; define eligibility at forecast origin,M04/M05
+Provider reporting gaps,12 codes with internal gaps,Investigate gaps and align features to calendar months,M05
+Provider identity,18 codes with name variants,Verify name/code changes before combining histories,M05
+Demand change candidates,0 transitions flagged,Investigate source/context; do not treat flags as errors,M05
