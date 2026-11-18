@@ -23,17 +23,19 @@ python -m pip install -r requirements.txt
 python -m pytest -q
 ```
 
-Open the five notebooks in order in VS Code or JupyterLab, select the same Python environment, and run all cells. M01-M02 rebuilds staging data from the included source files. M03 audits the staged dataset; M04-M06 produce versioned datasets and evidence. Review the generated summaries and evidence manifests before proceeding. For a terminal-only run:
+Open a notebook in VS Code or JupyterLab using the project environment. Set the execution mode in its first code cell.
 
-```bash
-python -m src.data.data_ingestion --repo . --start 2022-01 --end 2026-09
-python -m src.data.data_validation --repo . --fail-on-errors
-python -m src.data.data_preprocessing --repo .
-python -m src.data.longitudinal_preparation --repo .
-python -m src.data.dataset_finalisation --repo .
-```
+| Mode | Use | Output location |
+| --- | --- | --- |
+| `explore` (default) | Review saved results and figures without recomputing the pipeline | Existing evidence, read-only |
+| `rebuild` | Recalculate and test the five notebooks in order | `.work/rebuild/`, excluded from Git |
+| `snapshot` | Preserve a deliberate, versioned research execution | `data/processed/` and `docs/evidence/` |
 
-The notebooks additionally provide research interpretation and visual evidence. The terminal-only sequence does not reproduce every notebook visual or M01-M03 evidence snapshot.
+Explore reads completed evidence and verifies displayed artifact fingerprints (allowing Git text line-ending conversion). It does not write datasets or evidence; saving the notebook itself can update its cached cell outputs. The archived results are not a fresh execution. Set `VIEW_REBUILD = True` to explore completed rebuild results. To inspect a particular archived run, use `EXPLORE_RUN_IDS` with the milestone and run ID.
+
+For a fresh rebuild, set `MODE = "rebuild"` in notebooks 01 through 05 and run each once, in sequence. A rebuild has its own source and code copies, local datasets and evidence. It never appends to the archived evidence. To replace an existing or interrupted rebuild, stop its kernels and set `RESET_REBUILD = True` in notebook 01 only. This deletes the previous local rebuild workspace; leave the setting false for ordinary use. Do not run rebuild stages concurrently.
+
+For a research snapshot, set `MODE = "snapshot"` in the five notebooks and run them in order. This regenerates staging files and creates new versioned processed datasets and evidence. Save execution settings before Run All. Review the completed manifests before retaining or committing the new research evidence.
 
 ## Repository layout
 
@@ -43,6 +45,7 @@ The notebooks additionally provide research interpretation and visual evidence. 
 | `data/staging/`, `data/quality/`, `data/processed/` | Generated local outputs |
 | `src/`, `tests/` | Pipeline implementation and regression tests |
 | `notebooks/` | Executable research analyses |
+| `.work/rebuild/` | Isolated, replaceable local rebuild (not tracked) |
 | `docs/evidence/` | Versioned figures, reports, manifests and test logs |
 | `app/`, `models/` | Reserved for later stages |
 

@@ -22,3 +22,6 @@ outputs/
 # Operating system
 .DS_Store
 Thumbs.db
+
+# Isolated notebook rebuild workspace
+/.work/
