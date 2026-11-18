@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from src.data.m01_m02 import (
+from src.data.data_ingestion import (
     EXPECTED_COLUMNS, build_manifest, filename_month, ingest_historical,
     is_total_record, period_month, run_pipeline,
 )

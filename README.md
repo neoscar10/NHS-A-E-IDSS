@@ -8,11 +8,11 @@ The verified January 2022 to September 2026 collection contains 57 source files,
 
 | Stage | Notebook |
 | --- | --- |
-| M01-M02: Inventory and ingestion | [01_m01_m02_inventory_ingestion](notebooks/01_m01_m02_inventory_ingestion.ipynb) |
-| M03: Data quality | [02_m03_data_quality_validation](notebooks/02_m03_data_quality_validation.ipynb) |
-| M04: Standardisation | [03_m04_preprocessing](notebooks/03_m04_preprocessing.ipynb) |
-| M05: Longitudinal preparation | [04_m05_longitudinal_preparation](notebooks/04_m05_longitudinal_preparation.ipynb) |
-| M06: Final dataset | [05_m06_final_dataset](notebooks/05_m06_final_dataset.ipynb) |
+| M01-M02: Inventory and ingestion | [01_data_ingestion](notebooks/01_data_ingestion.ipynb) |
+| M03: Data quality | [02_data_quality](notebooks/02_data_quality.ipynb) |
+| M04: Standardisation | [03_data_preprocessing](notebooks/03_data_preprocessing.ipynb) |
+| M05: Longitudinal preparation | [04_longitudinal_preparation](notebooks/04_longitudinal_preparation.ipynb) |
+| M06: Final dataset | [05_final_dataset](notebooks/05_final_dataset.ipynb) |
 
 ## Setup and execution
 
@@ -26,11 +26,11 @@ python -m pytest -q
 Open the five notebooks in order in VS Code or JupyterLab, select the same Python environment, and run all cells. M01-M02 rebuilds staging data from the included source files. M03 audits the staged dataset; M04-M06 produce versioned datasets and evidence. Review the generated summaries and evidence manifests before proceeding. For a terminal-only run:
 
 ```bash
-python -m src.data.m01_m02 --repo . --start 2022-01 --end 2026-09
-python -m src.data.m03_validate --repo . --fail-on-errors
-python -m src.data.m04_preprocess --repo .
-python -m src.data.m05_longitudinal --repo .
-python -m src.data.m06_finalise --repo .
+python -m src.data.data_ingestion --repo . --start 2022-01 --end 2026-09
+python -m src.data.data_validation --repo . --fail-on-errors
+python -m src.data.data_preprocessing --repo .
+python -m src.data.longitudinal_preparation --repo .
+python -m src.data.dataset_finalisation --repo .
 ```
 
 The notebooks additionally provide research interpretation and visual evidence. The terminal-only sequence does not reproduce every notebook visual or M01-M03 evidence snapshot.

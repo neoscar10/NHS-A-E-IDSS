@@ -1,9 +1,9 @@
 """Regression tests for final dataset verification using fictional records."""
 import pandas as pd
 import pytest
-from src.data.m05_longitudinal import prepare_panel
-from src.data.m06_finalise import canonical_csv, verify_release, release_dictionary, PANEL_FIELDS, TARGET, OUTPUT_COLUMNS
-from test_m05_longitudinal import inputs
+from src.data.longitudinal_preparation import prepare_panel
+from src.data.dataset_finalisation import canonical_csv, verify_release, release_dictionary, PANEL_FIELDS, TARGET, OUTPUT_COLUMNS
+from test_longitudinal_preparation import inputs
 
 
 def fixture():

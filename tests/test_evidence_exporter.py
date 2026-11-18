@@ -6,7 +6,7 @@ from src.utils.evidence_exporter import EvidenceRun, digest, find_repo, snapshot
 
 @pytest.fixture
 def repo(tmp_path):
-    for rel, value in {'src/data/m01_m02.py':'# fixture', 'src/utils/evidence_exporter.py':'# fixture',
+    for rel, value in {'src/data/data_ingestion.py':'# fixture', 'src/utils/evidence_exporter.py':'# fixture',
                        'data/raw/a.csv':'source', 'docs/source_manifest.csv':'a,b\n1,2\n',
                        'docs/m01_coverage.json':'{"source_files":1}', 'tests/test_dummy.py':'def test_ok(): assert True\n'}.items():
         p=tmp_path/rel; p.parent.mkdir(parents=True, exist_ok=True); p.write_text(value, encoding='utf-8')

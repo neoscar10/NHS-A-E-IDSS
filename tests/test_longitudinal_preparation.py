@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
-from src.data.m04_preprocess import OUTPUT_COLUMNS, MEASURE_NAMES, TARGET
-from src.data.m05_longitudinal import prepare_panel
+from src.data.data_preprocessing import OUTPUT_COLUMNS, MEASURE_NAMES, TARGET
+from src.data.longitudinal_preparation import prepare_panel
 
 
 def inputs(months=15):
@@ -86,5 +86,5 @@ def test_global_calendar_gap_rejected():
 
 def test_monthly_statuses_partition():
     p,n=inputs();_,_,m=prepare_panel(p,n)
-    from src.data.m05_longitudinal import STATUSES
+    from src.data.longitudinal_preparation import STATUSES
     assert m[STATUSES].sum(axis=1).eq(m.calendar_rows).all()

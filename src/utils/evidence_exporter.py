@@ -48,7 +48,7 @@ def utc_now() -> str:
 def find_repo(start: Path | None = None) -> Path:
     start = (start or Path.cwd()).resolve()
     for p in (start, *start.parents):
-        if (p / 'src/data/m01_m02.py').is_file() and (p / 'data/raw').is_dir():
+        if (p / 'src/data/data_ingestion.py').is_file() and (p / 'data/raw').is_dir():
             return p
     raise FileNotFoundError('Open the NHS-A-E-IDSS repository and run from that folder or notebooks/.')
 
@@ -71,8 +71,8 @@ class EvidenceRun:
         if milestone not in MILESTONES:
             raise ValueError(f'Unknown milestone: {milestone}')
         self.repo = Path(repo).resolve()
-        if not (self.repo / 'src/data/m01_m02.py').is_file():
-            raise FileNotFoundError('Expected existing project src/data/m01_m02.py')
+        if not (self.repo / 'src/data/data_ingestion.py').is_file():
+            raise FileNotFoundError('Expected existing project src/data/data_ingestion.py')
         self.milestone = milestone
         self.run_id = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '_' + uuid4().hex[:8]
         evidence_root = self.repo / 'docs/evidence'
@@ -214,7 +214,7 @@ class EvidenceRun:
 
 
 def record_common_inputs(run: EvidenceRun, include_staged: bool = False):
-    for p in ('src/data/m01_m02.py', 'src/utils/evidence_exporter.py', *M01_REPORTS):
+    for p in ('src/data/data_ingestion.py', 'src/utils/evidence_exporter.py', *M01_REPORTS):
         run.record_input(p)
     if include_staged:
         for p in (*M02_REPORTS, *STAGED):
@@ -226,13 +226,13 @@ def record_common_inputs(run: EvidenceRun, include_staged: bool = False):
 def snapshot_existing(repo: Path, milestone: str, run_tests: bool = False) -> Path:
     """Reports-only archival of current local files, not a fresh validation."""
     groups = {'M01': M01_REPORTS, 'M02': M02_REPORTS, 'M03': M03_REPORTS}
-    tests = {'M01': 'tests/test_m01_m02.py', 'M02': 'tests/test_m01_m02.py', 'M03': 'tests/test_m03_validate.py'}
+    tests = {'M01': 'tests/test_data_ingestion.py', 'M02': 'tests/test_data_ingestion.py', 'M03': 'tests/test_data_validation.py'}
     if milestone not in groups:
         raise ValueError('The reports-only CLI currently supports M01 to M03')
     run = EvidenceRun(repo, milestone, 'Archive existing output files; original run time is not asserted.')
     record_common_inputs(run, milestone != 'M01')
     if milestone == 'M03':
-        run.record_input('src/data/m03_validate.py')
+        run.record_input('src/data/data_validation.py')
     for path in groups[milestone]:
         run.copy_report(path)
     if run_tests:

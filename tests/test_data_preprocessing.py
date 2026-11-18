@@ -2,9 +2,9 @@
 from pathlib import Path
 import pandas as pd
 import pytest
-from src.data.m01_m02 import EXPECTED_COLUMNS
-from src.data.m03_validate import MEASURES, PROVENANCE
-from src.data.m04_preprocess import standardise, conservation, data_dictionary, MEASURE_NAMES, OUTPUT_COLUMNS
+from src.data.data_ingestion import EXPECTED_COLUMNS
+from src.data.data_validation import MEASURES, PROVENANCE
+from src.data.data_preprocessing import standardise, conservation, data_dictionary, MEASURE_NAMES, OUTPUT_COLUMNS
 
 
 def fixture():

@@ -8,8 +8,8 @@ from io import StringIO
 from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
-from src.data.m04_preprocess import OUTPUT_COLUMNS, MEASURE_NAMES, TARGET, data_dictionary
-from src.data.m05_longitudinal import read_m04, typed, prepare_panel
+from src.data.data_preprocessing import OUTPUT_COLUMNS, MEASURE_NAMES, TARGET, data_dictionary
+from src.data.longitudinal_preparation import read_m04, typed, prepare_panel
 from src.utils.evidence_exporter import EvidenceRun, digest
 
 RUN_ID = re.compile(r'\d{8}T\d{6}Z_[0-9a-f]+')
@@ -116,15 +116,15 @@ def figures(panel,monthly,national,reconciliation):
 def run_finalise(repo, m05_run_id=None, run_tests=True, notebook=False):
     repo=Path(repo).resolve(); ev=EvidenceRun(repo,'M06','Verify and publish a versioned analytical dataset and data contract.')
     try:
-        for rel in ('src/data/m06_finalise.py','src/data/m05_longitudinal.py','src/data/m04_preprocess.py','src/utils/evidence_exporter.py'):
+        for rel in ('src/data/dataset_finalisation.py','src/data/longitudinal_preparation.py','src/data/data_preprocessing.py','src/utils/evidence_exporter.py'):
             ev.record_input(rel)
-        if notebook: ev.record_input('notebooks/05_m06_final_dataset.ipynb')
+        if notebook: ev.record_input('notebooks/05_final_dataset.ipynb')
         actual,p,n,s5,s4,paths=read_m05(repo,m05_run_id)
         for path in paths: ev.record_input(path.relative_to(repo).as_posix())
         panel,p,n,profile,monthly,rec,checks=verify_release(actual,p,n,s5)
         if checks['observed_rows']!=s4['provider_rows'] or len(n)!=s4['national_rows'] or len(p)+len(n)!=s4['input_rows']:
             raise ValueError('M04 source row conservation failed')
-        rc=ev.run_tests('tests/test_m06_finalise.py') if run_tests else None
+        rc=ev.run_tests('tests/test_dataset_finalisation.py') if run_tests else None
         if rc not in (None,0): raise RuntimeError('M06 tests failed')
         dest=repo/'data/processed/m06'/ev.run_id
         if dest.resolve()!=dest: raise ValueError('Invalid output location')

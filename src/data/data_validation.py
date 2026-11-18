@@ -15,9 +15,9 @@ from pathlib import Path
 import pandas as pd
 
 if __package__:
-    from .m01_m02 import EXPECTED_COLUMNS, expected_months, period_month
+    from .data_ingestion import EXPECTED_COLUMNS, expected_months, period_month
 else:
-    from m01_m02 import EXPECTED_COLUMNS, expected_months, period_month
+    from data_ingestion import EXPECTED_COLUMNS, expected_months, period_month
 
 PROVENANCE = ["source_month", "source_file", "source_sha256", "source_record_number"]
 IDENTITY = EXPECTED_COLUMNS[:4]

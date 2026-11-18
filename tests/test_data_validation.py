@@ -7,8 +7,8 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from src.data.m01_m02 import EXPECTED_COLUMNS
-from src.data.m03_validate import validate_dataset, load_staged, MEASURES
+from src.data.data_ingestion import EXPECTED_COLUMNS
+from src.data.data_validation import validate_dataset, load_staged, MEASURES
 
 
 def row(month: str, code: str, type1: str, ordinal: int, total: bool = False) -> dict:

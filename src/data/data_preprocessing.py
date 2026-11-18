@@ -1,5 +1,5 @@
 """M04: deterministic standardisation and separation of mixed-grain NHS A&E data.
-Run from repository root: python -m src.data.m04_preprocess --repo .
+Run from repository root: python -m src.data.data_preprocessing --repo .
 M05, not M04, defines longitudinal continuity and modelling eligibility.
 """
 from __future__ import annotations
@@ -12,8 +12,8 @@ from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from src.data.m01_m02 import EXPECTED_COLUMNS, period_month
-from src.data.m03_validate import PROVENANCE, MEASURES, load_staged, is_total_series, validate_dataset
+from src.data.data_ingestion import EXPECTED_COLUMNS, period_month
+from src.data.data_validation import PROVENANCE, MEASURES, load_staged, is_total_series, validate_dataset
 from src.utils.evidence_exporter import EvidenceRun, digest, record_common_inputs
 
 MEASURE_NAMES = [
@@ -150,10 +150,10 @@ def run_preprocessing(repo: Path, *, run_tests: bool = True, notebook: bool = Fa
     run=EvidenceRun(repo,'M04','Standardise NHS source representations and separate provider and national records.')
     try:
         record_common_inputs(run, include_staged=True)
-        for rel in ('src/data/m03_validate.py','src/data/m04_preprocess.py'):
+        for rel in ('src/data/data_validation.py','src/data/data_preprocessing.py'):
             run.record_input(rel)
         if notebook:
-            run.record_input('notebooks/03_m04_preprocessing.ipynb')
+            run.record_input('notebooks/03_data_preprocessing.ipynb')
         # Confirm source inputs still match the original M01 fingerprint register.
         manifest=pd.read_csv(repo/'docs/source_manifest.csv',dtype=str,keep_default_na=False)
         for row in manifest.to_dict('records'):
@@ -173,7 +173,7 @@ def run_preprocessing(repo: Path, *, run_tests: bool = True, notebook: bool = Fa
         preserved=conservation(data,provider,national)
         if not preserved.status.eq('MATCH').all():
             raise AssertionError('Original numeric measures changed')
-        rc=run.run_tests('tests/test_m04_preprocess.py') if run_tests else None
+        rc=run.run_tests('tests/test_data_preprocessing.py') if run_tests else None
         if rc not in (None,0):
             raise RuntimeError('M04 tests did not pass; inspect test_results')
         # Confirm inputs remained unchanged prior to publishing processed outputs.

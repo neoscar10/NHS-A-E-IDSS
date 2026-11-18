@@ -8,7 +8,7 @@ import importlib.util
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
-from src.data.m04_preprocess import OUTPUT_COLUMNS, MEASURE_NAMES, TARGET
+from src.data.data_preprocessing import OUTPUT_COLUMNS, MEASURE_NAMES, TARGET
 from src.utils.evidence_exporter import EvidenceRun, digest
 
 STATUSES = ['Candidate', 'No recent positive activity', 'Insufficient consecutive history', 'No reported record']
@@ -147,13 +147,13 @@ def run_longitudinal(repo, m04_run_id=None, window=12, run_tests=True, notebook=
     repo=Path(repo).resolve()
     evidence=EvidenceRun(repo,'M05','Prepare provider-month continuity and time-aware Type 1 forecasting candidates.')
     try:
-        for rel in ('src/data/m05_longitudinal.py','src/data/m04_preprocess.py','src/utils/evidence_exporter.py'):
+        for rel in ('src/data/longitudinal_preparation.py','src/data/data_preprocessing.py','src/utils/evidence_exporter.py'):
             evidence.record_input(rel)
-        if notebook:evidence.record_input('notebooks/04_m05_longitudinal_preparation.ipynb')
+        if notebook:evidence.record_input('notebooks/04_longitudinal_preparation.ipynb')
         p,n,m04,paths=read_m04(repo,m04_run_id)
         for path in paths:evidence.record_input(path.relative_to(repo).as_posix())
         panel,profile,monthly=prepare_panel(p,n,window)
-        rc=evidence.run_tests('tests/test_m05_longitudinal.py') if run_tests else None
+        rc=evidence.run_tests('tests/test_longitudinal_preparation.py') if run_tests else None
         if rc not in (None,0):raise RuntimeError('M05 regression tests failed')
         dest=repo/'data/processed/m05'/evidence.run_id
         if dest.resolve()!=dest:raise ValueError('Invalid output location')
