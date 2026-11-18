@@ -38,7 +38,7 @@ def load_staged(repo_root: Path, input_path: Path | None = None) -> tuple[pd.Dat
     if input_path is None:
         parquet = repo_root / "data/staging/ae_historical_raw_combined.parquet"
         csv_path = repo_root / "data/staging/ae_historical_raw_combined.csv"
-        path = parquet if parquet.exists() else csv_path
+        path = csv_path if csv_path.exists() else parquet
     else:
         path = Path(input_path)
         path = path.resolve() if path.is_absolute() else (repo_root / path).resolve()
@@ -72,7 +72,7 @@ def _json_write(path: Path, value: dict) -> None:
 
 
 def validate_dataset(repo_root: Path, input_path: Path | None = None,
-                     output_root: Path | None = None) -> dict:
+                     output_root: Path | None = None, *, verify_source: bool = True) -> dict:
     """Profile and report all issues without fixing or filtering any source records.
 
     Returns a dict containing summary, monthly, reconciliation, continuity,
@@ -84,6 +84,14 @@ def validate_dataset(repo_root: Path, input_path: Path | None = None,
     if output_root == raw_dir or raw_dir in output_root.parents:
         raise ValueError("Outputs must not be placed under data/raw")
     data, source = load_staged(repo_root, input_path)
+    identity = {'source_to_staging_check': 'NOT_PERFORMED'}
+    if verify_source:
+        if __package__:
+            from .source_integrity import verify_source_to_staging
+        else:
+            from source_integrity import verify_source_to_staging
+        alternate = repo_root / ('data/staging/ae_historical_raw_combined.parquet' if source.suffix.lower() == '.csv' else 'data/staging/ae_historical_raw_combined.csv')
+        identity = verify_source_to_staging(repo_root, data, other_path=alternate)
     source_label = source.relative_to(repo_root).as_posix() if source.is_relative_to(repo_root) else source.name
     total = is_total_series(data)
     provider = ~total
@@ -311,6 +319,7 @@ def validate_dataset(repo_root: Path, input_path: Path | None = None,
     incomplete_recon = int((recon_df["status"] == "NOT_COMPARABLE").sum())
     summary = {
         "source_input": source_label, "input_rows": int(len(data)),
+        "source_integrity": identity,
         "source_columns": int(len(data.columns)),
         "provider_rows": int(provider.sum()), "aggregate_rows": int(total.sum()),
         "observed_months": len(months), "first_month": months[0] if months else None,

@@ -37,6 +37,10 @@ For a fresh rebuild, set `MODE = "rebuild"` in notebooks 01 through 05 and run e
 
 For a research snapshot, set `MODE = "snapshot"` in the five notebooks and run them in order. This regenerates staging files and creates new versioned processed datasets and evidence. Save execution settings before Run All. Review the completed manifests before retaining or committing the new research evidence.
 
+## Source integrity and dataset versions
+
+`docs/source_baseline.json` pins the 57 raw CSVs to the original repository commit. Ingestion and validation independently compare source values and provenance against staging; conflicting CSV and Parquet exports are rejected. New source months or revisions require a reviewed baseline update. Live notebook sequences pin the source register, Python code, dependency specification and preceding run IDs. Restart kernels before beginning a live sequence; run stages in order. M06 records a final calendar SHA-256 fingerprint and source version for downstream modelling. Older evidence remains viewable in explore mode; rebuild from notebook 01 to obtain a release with the new integrity fields.
+
 ## Repository layout
 
 | Directory | Purpose |

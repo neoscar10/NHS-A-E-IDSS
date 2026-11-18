@@ -50,6 +50,8 @@ def read_m05(repo, run_id=None):
             raise ValueError('M05 Parquet fingerprint mismatch')
         paths.append(pq)
     p,n,s4,p4=read_m04(repo,s['m04_run_id'])
+    if s.get('source_integrity') != s4.get('source_integrity'):
+        raise ValueError('M05 source lineage differs from M04; rebuild from notebook 01')
     for path in p4:
         rel=path.relative_to(repo).as_posix()
         if digest(path)!=m['inputs'][rel]['sha256']: raise ValueError(f'M04 input changed after M05: {rel}')
@@ -119,6 +121,8 @@ def run_finalise(repo, m05_run_id=None, run_tests=True, notebook=False):
         for rel in ('src/data/dataset_finalisation.py','src/data/longitudinal_preparation.py','src/data/data_preprocessing.py','src/utils/evidence_exporter.py'):
             ev.record_input(rel)
         if notebook: ev.record_input('notebooks/05_final_dataset.ipynb')
+        ev.record_input('docs/source_baseline.json')
+        ev.record_input('src/data/source_integrity.py')
         actual,p,n,s5,s4,paths=read_m05(repo,m05_run_id)
         for path in paths: ev.record_input(path.relative_to(repo).as_posix())
         panel,p,n,profile,monthly,rec,checks=verify_release(actual,p,n,s5)
@@ -140,6 +144,8 @@ def run_finalise(repo, m05_run_id=None, run_tests=True, notebook=False):
                 equal_csv(canonical_csv(pd.read_parquet(path)),frame,label+' Parquet round trip')
                 outputs[path.relative_to(repo).as_posix()]={'rows':len(frame),'sha256':digest(path)}
         summary={'status':'PASS_FINAL_DATASET_VERIFICATION','run_id':ev.run_id,'m05_run_id':s5['run_id'],'m04_run_id':s4['run_id'],**checks,'national_rows':len(n),'first_month':monthly.iloc[0].period.strftime('%Y-%m'),'calendar_columns':len(panel.columns),'original_measures':len(MEASURE_NAMES),'national_comparisons':len(rec),'national_mismatches':int(rec.status.ne('MATCH').sum()),'history_window_months':s5['history_window_months'],'parquet_status':'exported and verified' if parquet else 'CSV only; PyArrow not installed','test_exit_code':rc,'outputs':outputs}
+        summary['source_integrity'] = s4['source_integrity']
+        summary['dataset_content_sha256'] = outputs[(dest/'ae_provider_calendar_final.csv').relative_to(repo).as_posix()]['sha256']
         dictionary=release_dictionary()
         contract={'schema_version':'1.0','calendar_key':['org_code','period'],'observed_key':['org_code','period'],'national_key':['period'],'target_measure':TARGET,'calendar_columns':list(panel.columns),'observed_and_national_columns':OUTPUT_COLUMNS,'missing_counts':'Absent calendar rows only; never replace with zero.','candidate_definition':f"Observed at origin, {s5['history_window_months']} consecutive observed months, positive Type 1 activity in at least one of those months.",'forecast_origin':'Reporting month is a proxy; actual publication and revisions must be considered.','modelling_input':'Use calendar export for chronological features. National and observed-only files are benchmarks and descriptive views, not extra training rows.','prohibited':'Do not use future-derived cohort eligibility, same-target-month measures, missing targets, national totals or provenance identifiers as predictors.','limit':'No temporal split, feature engineering or modelling has been performed.'}
         decisions=pd.DataFrame([['Calendar verified against M04 and M05','Use final calendar for calendar-aware lagging','M07'],['Published zeros distinct from absent records','Keep reported zeros; exclude unknown targets from scoring','M07/M09'],['Origin eligibility is provisional','Apply rules at each origin, not using full-period activity','M07'],['Historical publication timing and revisions','Document as-of availability; evaluate horizon accordingly','M07/M09'],['Organisation variants and service status','Keep codes separate pending authoritative verification','M07/M09']],columns=['evidence','decision','stage'])

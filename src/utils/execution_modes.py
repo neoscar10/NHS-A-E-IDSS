@@ -5,9 +5,11 @@ import hashlib
 import json
 import re
 import shutil
+from uuid import uuid4
 from pathlib import Path
 
 from src.utils.evidence_exporter import MILESTONES
+from src.data.source_integrity import REGISTER, verify_source_register
 
 STAGES = {1: ('M01', 'M02'), 2: ('M03',), 3: ('M04',), 4: ('M05',), 5: ('M06',)}
 MODES = ('explore', 'rebuild', 'snapshot')
@@ -58,8 +60,25 @@ def _state(work):
     return s
 
 
-def _write_state(work, completed, active=None):
-    (work / MARKER).write_text(json.dumps({'owner': OWNER, 'completed': completed, 'active': active}, indent=2) + '\n', encoding='utf-8')
+def _write_state(work, completed, active=None, **extra):
+    payload = {'owner': OWNER, 'completed': completed, 'active': active, **extra}
+    temp = work / (MARKER + '.tmp')
+    temp.write_text(json.dumps(payload, indent=2) + '\n', encoding='utf-8')
+    temp.replace(work / MARKER)
+
+
+def _code_signature(repo):
+    paths = sorted(p for folder in ('src', 'tests') for p in (repo / folder).rglob('*.py'))
+    paths.extend(p for p in (repo / 'requirements.txt', repo / REGISTER) if p.is_file())
+    value = [(p.relative_to(repo).as_posix(), hashlib.sha256(p.read_bytes()).hexdigest()) for p in paths]
+    return hashlib.sha256(json.dumps(value).encode('utf-8')).hexdigest()
+
+
+def _snapshot_workspace(project):
+    path = project / '.work/snapshot'
+    if path.resolve() != path:
+        raise ValueError('Snapshot state directory must not redirect through symlinks')
+    return path
 
 
 class NotebookSession:
@@ -92,8 +111,11 @@ class NotebookSession:
             return
         if run_ids:
             raise ValueError('EXPLORE_RUN_IDS is available only in explore mode')
+        self.identity = verify_source_register(self.project)
+        self.code_signature = _code_signature(self.project)
+        self.work = _workspace(self.project) if mode == 'rebuild' else _snapshot_workspace(self.project)
         if mode == 'rebuild':
-            self.repo = _workspace(self.project)
+            self.repo = self.work
             if stage == 1:
                 if self.repo.exists():
                     _state(self.repo)
@@ -101,30 +123,60 @@ class NotebookSession:
                         raise FileExistsError('Rebuild already exists. Explore it or set RESET_REBUILD=True in notebook 01.')
                     shutil.rmtree(self.repo)
                 self.repo.mkdir(parents=True, exist_ok=False)
-                _write_state(self.repo, 0, 1)
                 for rel in ('data/raw', 'src', 'tests', 'notebooks'):
                     shutil.copytree(self.project / rel, self.repo / rel,
                                     ignore=shutil.ignore_patterns('__pycache__', '*.pyc', '.ipynb_checkpoints'))
-            else:
-                state = _state(self.repo)
-                if state['completed'] != stage - 1 or state.get('active') is not None:
-                    raise ValueError('Run rebuild notebooks in order once. Restart at notebook 01 to reset an interrupted rebuild.')
-                _write_state(self.repo, stage - 1, stage)
+                (self.repo / REGISTER).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(self.project / REGISTER, self.repo / REGISTER)
+                if (self.project / 'requirements.txt').is_file():
+                    shutil.copy2(self.project / 'requirements.txt', self.repo / 'requirements.txt')
+        if stage == 1:
+            self.work.mkdir(parents=True, exist_ok=True)
+            if (self.work / MARKER).exists():
+                _state(self.work)
+            self.chain = {'workflow_id': uuid4().hex, 'code_signature': self.code_signature,
+                          'source_identity': self.identity, 'runs': {}}
+        else:
+            state = _state(self.work)
+            if state['completed'] != stage - 1 or state.get('active') is not None:
+                raise ValueError('Run live notebooks in order once; restart at notebook 01 after stopping active kernels.')
+            self.chain = {k: state[k] for k in ('workflow_id', 'code_signature', 'source_identity', 'runs')}
+        self._check_chain()
+        _write_state(self.work, stage - 1, stage, **self.chain)
         self.before = {m: set(_runs(self.repo, m)) for m in STAGES[stage]}
 
     def finish(self):
         if self.mode == 'explore':
             return
+        self._check_chain()
         for m in STAGES[self.stage]:
             new = set(_runs(self.repo, m)) - self.before[m]
             if len(new) != 1:
                 raise RuntimeError(f'Expected exactly one new {m} evidence run')
-            _manifest(self.repo, m, new.pop())
-        if self.mode == 'rebuild':
-            state = _state(self.repo)
-            if state.get('active') != self.stage or state['completed'] != self.stage - 1:
-                raise RuntimeError('Rebuild stage changed during execution')
-            _write_state(self.repo, self.stage)
+            run_id = new.pop()
+            folder, _ = _manifest(self.repo, m, run_id)
+            self.chain['runs'][m] = {'run_id': run_id, 'manifest_sha256': hashlib.sha256((folder / 'evidence_manifest.json').read_bytes()).hexdigest()}
+        state = _state(self.work)
+        if state.get('active') != self.stage or state['completed'] != self.stage - 1 or state.get('workflow_id') != self.chain['workflow_id']:
+            raise RuntimeError('Live sequence changed during execution')
+        _write_state(self.work, self.stage, **self.chain)
+
+    def _check_chain(self):
+        if (_code_signature(self.project) != self.chain['code_signature'] or
+                _code_signature(self.repo) != self.chain['code_signature']):
+            raise ValueError('Code or dependencies changed during the live sequence; restart at notebook 01')
+        if (verify_source_register(self.project) != self.chain['source_identity'] or
+                verify_source_register(self.repo) != self.chain['source_identity']):
+            raise ValueError('Source baseline changed during the live sequence; restart at notebook 01')
+        for m, info in self.chain['runs'].items():
+            folder, _ = _manifest(self.repo, m, info['run_id'])
+            if hashlib.sha256((folder / 'evidence_manifest.json').read_bytes()).hexdigest() != info['manifest_sha256']:
+                raise ValueError(f'Earlier evidence manifest changed: {m}')
+
+    def prior_run(self, milestone):
+        if self.mode == 'explore' or milestone not in self.chain['runs']:
+            raise ValueError(f'No prior live run for {milestone}')
+        return self.chain['runs'][milestone]['run_id']
 
     def locations(self):
         return {m: folder.relative_to(self.project).as_posix() for m, (folder, _) in self.selected.items()}

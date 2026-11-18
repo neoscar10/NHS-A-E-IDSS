@@ -14,6 +14,8 @@ def project(tmp_path):
         (tmp_path / rel).mkdir(parents=True)
     (tmp_path / 'src/data/data_ingestion.py').write_text('# fixture')
     (tmp_path / 'data/raw/a.csv').write_text('original')
+    from test_data_ingestion import _pin_sources
+    _pin_sources(tmp_path)
     return tmp_path
 
 
@@ -62,7 +64,7 @@ def test_rebuild_separate_and_ordered(project):
         record(s.repo, m)
     s.finish()
     assert _state(s.repo)['completed'] == 1
-    assert not (project / 'docs').exists()
+    assert not (project / 'docs/evidence').exists()
     e = NotebookSession(project, 'explore', 1, view_rebuild=True)
     assert e.repo == s.repo
     with pytest.raises(ValueError, match='in order'):
@@ -95,6 +97,10 @@ def test_unknown_workspace_not_removed(project):
 
 def test_snapshot_requires_new_complete_run(project):
     old = record(project, 'M03')
+    first = NotebookSession(project, 'snapshot', 1)
+    for m in STAGES[1]:
+        record(project, m)
+    first.finish()
     s = NotebookSession(project, 'snapshot', 2)
     with pytest.raises(RuntimeError, match='exactly one'):
         s.finish()
@@ -110,3 +116,26 @@ def test_failed_rebuild_not_completed(project):
     with pytest.raises(ValueError, match='not complete'):
         s.finish()
     assert _state(s.repo)['completed'] == 0
+
+
+def test_rebuild_rejects_code_drift(project):
+    s = NotebookSession(project, 'rebuild', 1)
+    for m in STAGES[1]:
+        record(s.repo, m)
+    s.finish()
+    (project / 'src/data/data_ingestion.py').write_text('# changed')
+    with pytest.raises(ValueError, match='Code or dependencies changed'):
+        NotebookSession(project, 'rebuild', 2)
+
+
+def test_live_run_ids_pinned(project):
+    s = NotebookSession(project, 'snapshot', 1)
+    for m in STAGES[1]:
+        record(project, m)
+    s.finish()
+    t = NotebookSession(project, 'snapshot', 2)
+    assert t.prior_run('M02') == '20260101T000000Z_abcd'
+    record(project, 'M03')
+    t.finish()
+    with pytest.raises(ValueError, match='in order'):
+        NotebookSession(project, 'snapshot', 2)

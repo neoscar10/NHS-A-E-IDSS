@@ -17,6 +17,16 @@ def _row(month: str, code: str, name: str, count: str) -> list[str]:
     return values
 
 
+def _pin_sources(repo):
+    import json
+    from src.data.source_integrity import REGISTER, git_blob_sha
+    path = repo / REGISTER
+    path.parent.mkdir(parents=True, exist_ok=True)
+    files = [{'path': p.relative_to(repo).as_posix(), 'git_blob_sha1': git_blob_sha(p.read_bytes())}
+             for p in sorted((repo / 'data/raw').rglob('*.csv'))]
+    path.write_text(json.dumps({'source_version': 'synthetic-fixture', 'files': files}), encoding='utf-8')
+
+
 def _fixture(repo: Path, months=("JANUARY", "FEBRUARY")):
     for number, month in enumerate(months, start=1):
         path = repo / "data" / "raw" / "2022" / f"{month.title()}-2022-synthetic.csv"
@@ -27,6 +37,7 @@ def _fixture(repo: Path, months=("JANUARY", "FEBRUARY")):
             period = f"MSitAE-{month}-2022"
             writer.writerow(_row(period, f"R0{number}", "Fictional Provider", str(100 * number)))
             writer.writerow(_row(" Total ", " Total ", "Total", str(100 * number)))
+    _pin_sources(repo)
     return repo
 
 
@@ -104,6 +115,7 @@ def test_trailing_empty_source_columns_handled_safely(tmp_path):
     with path.open("w", encoding="utf-8", newline="") as f:
         csv.writer(f).writerows(rows)
     original_sha256 = hashlib.sha256(path.read_bytes()).hexdigest()
+    _pin_sources(repo)
 
     result = run_pipeline(repo, tmp_path / "out", "2022-01", "2022-01")
     entry = result["manifest"].iloc[0]

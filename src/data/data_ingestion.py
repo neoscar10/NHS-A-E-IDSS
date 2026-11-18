@@ -258,6 +258,7 @@ def ingest_historical(repo_root: Path, manifest: pd.DataFrame, staging_dir: Path
     try:
         combined.to_parquet(parquet_path, index=False)
     except (ImportError, ModuleNotFoundError):
+        parquet_path.unlink(missing_ok=True)
         parquet_status = "skipped: pyarrow or fastparquet unavailable"
     summary = {
         "source_files": int(len(manifest)),
@@ -286,10 +287,18 @@ def run_pipeline(repo_root: Path, output_root: Path | None = None,
     raw_dir = (repo_root / "data" / "raw").resolve()
     if output_root == raw_dir or raw_dir in output_root.parents:
         raise ValueError("Output cannot be inside the raw source directory")
+    if __package__:
+        from .source_integrity import verify_source_register, verify_source_to_staging
+    else:
+        from source_integrity import verify_source_register, verify_source_to_staging
+    verify_source_register(repo_root)
     manifest, coverage = build_manifest(repo_root, output_root / "docs", start, end)
     if strict_coverage and (coverage["missing_months"] or coverage["unexpected_months"] or coverage["duplicate_months"]):
         raise ValueError(f"M01 month coverage incomplete/duplicated; inspect {output_root / 'docs' / 'm01_coverage.json'}")
     combined, summary = ingest_historical(repo_root, manifest, output_root / "data" / "staging")
+    identity = verify_source_to_staging(repo_root, combined)
+    summary.update(identity)
+    (output_root / "data/staging/m02_ingestion_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     return {"m01": coverage, "m02": summary, "combined": combined, "manifest": manifest}
 
 

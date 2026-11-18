@@ -216,6 +216,8 @@ class EvidenceRun:
 def record_common_inputs(run: EvidenceRun, include_staged: bool = False):
     for p in ('src/data/data_ingestion.py', 'src/utils/evidence_exporter.py', *M01_REPORTS):
         run.record_input(p)
+    for p in ('docs/source_baseline.json', 'src/data/source_integrity.py'):
+        run.record_input(p, required=False)
     if include_staged:
         for p in (*M02_REPORTS, *STAGED):
             run.record_input(p, required=p in M02_REPORTS)

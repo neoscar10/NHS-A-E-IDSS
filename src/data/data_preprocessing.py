@@ -150,6 +150,8 @@ def run_preprocessing(repo: Path, *, run_tests: bool = True, notebook: bool = Fa
     run=EvidenceRun(repo,'M04','Standardise NHS source representations and separate provider and national records.')
     try:
         record_common_inputs(run, include_staged=True)
+        run.record_input('docs/source_baseline.json')
+        run.record_input('src/data/source_integrity.py')
         for rel in ('src/data/data_validation.py','src/data/data_preprocessing.py'):
             run.record_input(rel)
         if notebook:
@@ -197,6 +199,7 @@ def run_preprocessing(repo: Path, *, run_tests: bool = True, notebook: bool = Fa
                 outputs[pq.relative_to(repo).as_posix()]={'sha256':digest(pq),'rows':len(frame)}
         summary={'status':'PASS_STANDARDISATION','run_id':run.run_id,
                  'input':input_path.relative_to(repo).as_posix(),'input_sha256':digest(input_path),
+                 'source_integrity':audit['summary']['source_integrity'],
                  'input_rows':len(data),'provider_rows':len(provider),'national_rows':len(national),
                  'provider_rows_removed':0,'records_unaccounted_for':len(data)-len(provider)-len(national),
                  'months':int(provider.period.nunique()),'provider_codes':int(provider.org_code.nunique()),

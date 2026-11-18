@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 from src.data.data_preprocessing import OUTPUT_COLUMNS, MEASURE_NAMES, TARGET
 from src.utils.evidence_exporter import EvidenceRun, digest
+from src.data.source_integrity import verify_source_register
 
 STATUSES = ['Candidate', 'No recent positive activity', 'Insufficient consecutive history', 'No reported record']
 
@@ -33,6 +34,9 @@ def read_m04(repo, run_id=None):
         actual = digest(p)
         if manifest['inputs'][rel]['sha256'] != actual or (p != paths[0] and summary['outputs'][rel]['sha256'] != actual):
             raise ValueError(f'M04 fingerprint mismatch: {rel}')
+    identity = verify_source_register(repo)
+    if summary.get('source_integrity', {}).get('source_baseline_sha256') != identity['source_baseline_sha256']:
+        raise ValueError('M04 source register differs or is not verified; rebuild from notebook 01')
     provider = pd.read_csv(paths[2], dtype='string', keep_default_na=False)
     national = pd.read_csv(paths[3], dtype='string', keep_default_na=False)
     if len(provider) != summary['provider_rows'] or len(national) != summary['national_rows']:
@@ -150,6 +154,8 @@ def run_longitudinal(repo, m04_run_id=None, window=12, run_tests=True, notebook=
         for rel in ('src/data/longitudinal_preparation.py','src/data/data_preprocessing.py','src/utils/evidence_exporter.py'):
             evidence.record_input(rel)
         if notebook:evidence.record_input('notebooks/04_longitudinal_preparation.ipynb')
+        evidence.record_input('docs/source_baseline.json')
+        evidence.record_input('src/data/source_integrity.py')
         p,n,m04,paths=read_m04(repo,m04_run_id)
         for path in paths:evidence.record_input(path.relative_to(repo).as_posix())
         panel,profile,monthly=prepare_panel(p,n,window)
@@ -167,6 +173,7 @@ def run_longitudinal(repo, m04_run_id=None, window=12, run_tests=True, notebook=
         latest=monthly.iloc[-1]; absent=int((~panel.is_observed).sum()); gaps=int(profile.missing_within_observed_span.sum()); trailing=int(profile.absent_after_last_observation.sum())
         assert absent==gaps+trailing
         s={'status':'PASS_LONGITUDINAL_PREPARATION','run_id':evidence.run_id,'m04_run_id':m04['run_id'],'history_window_months':window,'reporting_months':len(monthly),'provider_codes':len(profile),'observed_rows':int(panel.is_observed.sum()),'calendar_rows':len(panel),'absent_rows':absent,'internal_gap_rows':gaps,'absent_after_last_observation_rows':trailing,'providers_with_internal_gaps':int(profile.missing_within_observed_span.gt(0).sum()),'providers_with_name_variants':int(profile.distinct_recorded_names.gt(1).sum()),'providers_with_parent_variants':int(profile.distinct_recorded_parent_groups.gt(1).sum()),'reported_zero_rows':int(panel.observation_state.eq('Reported zero').sum()),'latest_month':latest.period.strftime('%Y-%m'),'latest_candidates':int(latest.candidate_rows),'latest_observed_providers':int(latest.observed_rows),'candidate_origin_rows':int(panel.type1_candidate.sum()),'test_exit_code':rc,'outputs':outputs,'parquet_status':'exported' if parquet else 'CSV only; PyArrow not installed'}
+        s['source_integrity'] = m04['source_integrity']
         decisions=pd.DataFrame([
             ['Absent provider-month','Keep measures null; no imputation or inferred closure','Implemented'],
             ['Reported zeros','Retain exactly as published','Implemented'],

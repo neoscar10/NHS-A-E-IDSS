@@ -8,7 +8,12 @@ import pandas as pd
 import pytest
 
 from src.data.data_ingestion import EXPECTED_COLUMNS
-from src.data.data_validation import validate_dataset, load_staged, MEASURES
+from src.data.data_validation import validate_dataset as _validate_dataset, load_staged, MEASURES
+
+
+def validate_dataset(*args, **kwargs):
+    # These isolated quality fixtures deliberately lack original source files.
+    return _validate_dataset(*args, verify_source=False, **kwargs)
 
 
 def row(month: str, code: str, type1: str, ordinal: int, total: bool = False) -> dict:
