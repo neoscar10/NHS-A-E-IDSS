@@ -1,0 +1,28 @@
+field,source,dtype,definition
+period,source_month,datetime64 (month start),"Reporting month, not an attendance timestamp."
+source_period,Period,string,"Original period text, including TOTAL labels."
+org_code,Org Code,string,"Trimmed, uppercased source organisation code; not a numeric feature."
+parent_org,Parent Org,string,"Observed parent grouping, outer spaces trimmed; not a verified historical crosswalk."
+org_name,Org name,string,"Observed organisation name, outer spaces trimmed; variants preserved."
+type1_attendances,A&E attendances Type 1,int64,Published count; no change in numeric value.
+type2_attendances,A&E attendances Type 2,int64,Published count; no change in numeric value.
+other_attendances,A&E attendances Other A&E Department,int64,Published count; no change in numeric value.
+type1_booked_attendances,A&E attendances Booked Appointments Type 1,int64,Published count; no change in numeric value.
+type2_booked_attendances,A&E attendances Booked Appointments Type 2,int64,Published count; no change in numeric value.
+other_booked_attendances,A&E attendances Booked Appointments Other Department,int64,Published count; no change in numeric value.
+type1_over_4hrs,Attendances over 4hrs Type 1,int64,Published count; no change in numeric value.
+type2_over_4hrs,Attendances over 4hrs Type 2,int64,Published count; no change in numeric value.
+other_over_4hrs,Attendances over 4hrs Other Department,int64,Published count; no change in numeric value.
+type1_booked_over_4hrs,Attendances over 4hrs Booked Appointments Type 1,int64,Published count; no change in numeric value.
+type2_booked_over_4hrs,Attendances over 4hrs Booked Appointments Type 2,int64,Published count; no change in numeric value.
+other_booked_over_4hrs,Attendances over 4hrs Booked Appointments Other Department,int64,Published count; no change in numeric value.
+dta_wait_4_12hrs,Patients who have waited 4-12 hs from DTA to admission,int64,Published count; no change in numeric value.
+dta_wait_12plus_hrs,Patients who have waited 12+ hrs from DTA to admission,int64,Published count; no change in numeric value.
+type1_emergency_admissions,Emergency admissions via A&E - Type 1,int64,Published count; no change in numeric value.
+type2_emergency_admissions,Emergency admissions via A&E - Type 2,int64,Published count; no change in numeric value.
+other_ae_emergency_admissions,Emergency admissions via A&E - Other A&E department,int64,Published count; no change in numeric value.
+other_emergency_admissions,Other emergency admissions,int64,Published count; no change in numeric value.
+source_month,source_month,string,Unchanged M02 source traceability field.
+source_file,source_file,string,Unchanged M02 source traceability field.
+source_sha256,source_sha256,string,Unchanged M02 source traceability field.
+source_record_number,source_record_number,string,Unchanged M02 source traceability field.

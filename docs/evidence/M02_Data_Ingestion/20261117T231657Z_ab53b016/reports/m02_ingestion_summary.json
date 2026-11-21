@@ -1,0 +1,14 @@
+{
+  "source_files": 57,
+  "combined_rows_including_totals": 11449,
+  "provider_rows": 11392,
+  "national_total_rows_retained": 57,
+  "original_source_columns": 22,
+  "additive_provenance_columns": 4,
+  "source_format_warning_files": 1,
+  "trailing_empty_source_columns_ignored": 6,
+  "output_columns": 26,
+  "note": "M01/M02 only: no filtering, imputation, type conversion of source measures, or forecasting",
+  "parquet_status": "exported",
+  "combined_csv": "C:\\Users\\hp\\NHS-A-E-IDSS\\data\\staging\\ae_historical_raw_combined.csv"
+}

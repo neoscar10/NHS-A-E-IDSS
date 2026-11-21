@@ -1,0 +1,52 @@
+{
+  "status": "PASS_STANDARDISATION",
+  "run_id": "20261117T233306Z_1573d5bb",
+  "input": "data/staging/ae_historical_raw_combined.parquet",
+  "input_sha256": "43beeea2e01c793a95f399f00d70a1c9c2fe12c928bae2b9b9c7a9bb31c3920f",
+  "input_rows": 11449,
+  "provider_rows": 11392,
+  "national_rows": 57,
+  "provider_rows_removed": 0,
+  "records_unaccounted_for": 0,
+  "months": 57,
+  "provider_codes": 223,
+  "output_columns": 27,
+  "counts_preserved": 18,
+  "zero_type1_before": 4426,
+  "zero_type1_after": 4426,
+  "m03_checks": {
+    "error_groups": 0,
+    "error_affected_row_occurrences": 0,
+    "warning_groups": 0,
+    "reconciliations_matched": 1026,
+    "reconciliations_mismatched": 0,
+    "reconciliations_not_comparable": 0,
+    "providers_with_internal_month_gaps": 12,
+    "providers_with_name_variants": 18,
+    "type1_change_review_candidates": 0,
+    "m02_row_count_check": "MATCH",
+    "m01_manifest_check": "MATCH",
+    "m01_month_coverage_check": "MATCH"
+  },
+  "parquet_status": "exported",
+  "tests_exit_code": 0,
+  "output_directory": "data/processed/m04/20261117T233306Z_1573d5bb",
+  "outputs": {
+    "data/processed/m04/20261117T233306Z_1573d5bb/ae_provider_monthly.csv": {
+      "sha256": "031b092b9d586f8b9ca148d695189120914ac454039191a0ac8aea36a47dfe1f",
+      "rows": 11392
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/ae_provider_monthly.parquet": {
+      "sha256": "b2f5d0ca7936f19e85e857b8f334811c1ad4d95cad888940fe0738bc09cdc744",
+      "rows": 11392
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/ae_national_monthly.csv": {
+      "sha256": "89fccca02974684751af9d8324165fd1901aea8cb5de6206df6f8ca789c9bc16",
+      "rows": 57
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/ae_national_monthly.parquet": {
+      "sha256": "8105871bc0e29bb7aeca98214af8b31c0b521c67f49f2bc2d377e10fb7bf00e8",
+      "rows": 57
+    }
+  }
+}

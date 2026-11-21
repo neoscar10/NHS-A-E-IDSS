@@ -1,0 +1,27 @@
+{
+  "source_input": "data/staging/ae_historical_raw_combined.parquet",
+  "input_rows": 11449,
+  "source_columns": 26,
+  "provider_rows": 11392,
+  "aggregate_rows": 57,
+  "observed_months": 57,
+  "first_month": "2022-01",
+  "last_month": "2026-09",
+  "expected_measure_columns": 18,
+  "checks": {
+    "error_groups": 0,
+    "error_affected_row_occurrences": 0,
+    "warning_groups": 0,
+    "reconciliations_matched": 1026,
+    "reconciliations_mismatched": 0,
+    "reconciliations_not_comparable": 0,
+    "providers_with_internal_month_gaps": 12,
+    "providers_with_name_variants": 18,
+    "type1_change_review_candidates": 0,
+    "m02_row_count_check": "MATCH",
+    "m01_manifest_check": "MATCH",
+    "m01_month_coverage_check": "MATCH"
+  },
+  "quality_gate": "PASS_CORE_CHECKS_WITH_ADVISORIES",
+  "method": "M03 audit only: no values corrected, no rows removed, no feature engineering"
+}

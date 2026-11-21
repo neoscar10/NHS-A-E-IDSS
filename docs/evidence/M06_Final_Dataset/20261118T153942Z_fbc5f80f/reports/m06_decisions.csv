@@ -1,0 +1,6 @@
+evidence,decision,stage
+Calendar verified against M04 and M05,Use final calendar for calendar-aware lagging,M07
+Published zeros distinct from absent records,Keep reported zeros; exclude unknown targets from scoring,M07/M09
+Origin eligibility is provisional,"Apply rules at each origin, not using full-period activity",M07
+Historical publication timing and revisions,Document as-of availability; evaluate horizon accordingly,M07/M09
+Organisation variants and service status,Keep codes separate pending authoritative verification,M07/M09

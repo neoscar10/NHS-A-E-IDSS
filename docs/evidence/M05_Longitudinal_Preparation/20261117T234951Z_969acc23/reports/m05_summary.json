@@ -1,0 +1,33 @@
+{
+  "status": "PASS_LONGITUDINAL_PREPARATION",
+  "run_id": "20261117T234951Z_969acc23",
+  "m04_run_id": "20261117T233306Z_1573d5bb",
+  "history_window_months": 12,
+  "reporting_months": 57,
+  "provider_codes": 223,
+  "observed_rows": 11392,
+  "calendar_rows": 12263,
+  "absent_rows": 871,
+  "internal_gap_rows": 30,
+  "absent_after_last_observation_rows": 841,
+  "providers_with_internal_gaps": 12,
+  "providers_with_name_variants": 18,
+  "providers_with_parent_variants": 0,
+  "reported_zero_rows": 4426,
+  "latest_month": "2026-09",
+  "latest_candidates": 120,
+  "latest_observed_providers": 191,
+  "candidate_origin_rows": 5599,
+  "test_exit_code": 0,
+  "outputs": {
+    "data/processed/m05/20261117T234951Z_969acc23/ae_provider_calendar.csv": {
+      "rows": 12263,
+      "sha256": "16500cdcd05cb1cd4cac4e8b6b973c5586770696c2cf115f5157b9051a146aef"
+    },
+    "data/processed/m05/20261117T234951Z_969acc23/ae_provider_calendar.parquet": {
+      "rows": 12263,
+      "sha256": "8250d0ecb714f18c3c76fed9436d89df3e9357ad520e38dbb418b72b2cb47bbd"
+    }
+  },
+  "parquet_status": "exported"
+}

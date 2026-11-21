@@ -1,0 +1,51 @@
+{
+  "status": "PASS_FINAL_DATASET_VERIFICATION",
+  "run_id": "20261118T153942Z_fbc5f80f",
+  "m05_run_id": "20261117T234951Z_969acc23",
+  "m04_run_id": "20261117T233306Z_1573d5bb",
+  "calendar_rows": 12263,
+  "observed_rows": 11392,
+  "absent_rows": 871,
+  "reported_zero_rows": 4426,
+  "candidate_origin_rows": 5599,
+  "reporting_months": 57,
+  "provider_codes": 223,
+  "latest_candidates": 120,
+  "latest_observed_providers": 191,
+  "latest_month": "2026-09",
+  "national_rows": 57,
+  "first_month": "2022-01",
+  "calendar_columns": 35,
+  "original_measures": 18,
+  "national_comparisons": 1026,
+  "national_mismatches": 0,
+  "history_window_months": 12,
+  "parquet_status": "exported and verified",
+  "test_exit_code": 0,
+  "outputs": {
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_provider_calendar_final.csv": {
+      "rows": 12263,
+      "sha256": "16500cdcd05cb1cd4cac4e8b6b973c5586770696c2cf115f5157b9051a146aef"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_provider_calendar_final.parquet": {
+      "rows": 12263,
+      "sha256": "8250d0ecb714f18c3c76fed9436d89df3e9357ad520e38dbb418b72b2cb47bbd"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_provider_observed_final.csv": {
+      "rows": 11392,
+      "sha256": "031b092b9d586f8b9ca148d695189120914ac454039191a0ac8aea36a47dfe1f"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_provider_observed_final.parquet": {
+      "rows": 11392,
+      "sha256": "5450ebfefdfa4911176a374ef9376f19a1a6a22338a5c650eeab26353afeb14a"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_national_final.csv": {
+      "rows": 57,
+      "sha256": "89fccca02974684751af9d8324165fd1901aea8cb5de6206df6f8ca789c9bc16"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_national_final.parquet": {
+      "rows": 57,
+      "sha256": "681ee6774774e47bb6b6da1dae0653e78ff62aa68b32fd36a1ca93b20977ab1f"
+    }
+  }
+}

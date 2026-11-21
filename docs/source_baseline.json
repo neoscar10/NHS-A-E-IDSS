@@ -1,0 +1,235 @@
+{
+  "source_version": "nhs-ae-2022-01_2026-09-v1",
+  "reference_commit": "9ef6d62da41e3720c7043211c377344152ee6f13",
+  "fingerprint_definition": "Git blob SHA-1 from the source reference commit; exact local SHA-256 recorded during ingestion. Git LF/CRLF conversion permitted.",
+  "files": [
+    {
+      "path": "data/raw/2022/April-2022-revised-130624-F4scP.csv",
+      "git_blob_sha1": "d6fbf9078c3f4478ee2595ea38ebaaf631762ffa"
+    },
+    {
+      "path": "data/raw/2022/August-2022-revised-110523-eee555.csv",
+      "git_blob_sha1": "cbeb6b010cf418cc16705e88ae9d9b814aba300f"
+    },
+    {
+      "path": "data/raw/2022/December-2022-revised-110523-iii999.csv",
+      "git_blob_sha1": "0a6f5ec2d8c59e051fd7876c42a60fa44704eeec"
+    },
+    {
+      "path": "data/raw/2022/February-2022-revised-120522-cag124.csv",
+      "git_blob_sha1": "c49b65a2f640be35c3b90f7530a82bf674df1f8e"
+    },
+    {
+      "path": "data/raw/2022/January-2022-revised-120522-bbb333.csv",
+      "git_blob_sha1": "93d0e57c89d8e16a599b5657109e838f046a72fa"
+    },
+    {
+      "path": "data/raw/2022/July-2022-revised-110523-ddd444.csv",
+      "git_blob_sha1": "6f1164737f4238658ca17c4817bfdd27d11a6641"
+    },
+    {
+      "path": "data/raw/2022/June-2022-revised-110523-ccc333.csv",
+      "git_blob_sha1": "6d49b07d13582c7ad9cb155451baddce6f691e70"
+    },
+    {
+      "path": "data/raw/2022/March-2022-revised-120522-cab316.csv",
+      "git_blob_sha1": "413984df62a3642950e60ba07df2264e8daa7c61"
+    },
+    {
+      "path": "data/raw/2022/May-2022-revised-110523-bbb222.csv",
+      "git_blob_sha1": "b147873aec18564f3da315e3b7ada15d117580f7"
+    },
+    {
+      "path": "data/raw/2022/November-2022-revised-110523-hhh888.csv",
+      "git_blob_sha1": "ecbe37f9e9429b56007cf4f07dd40ca4de2efd70"
+    },
+    {
+      "path": "data/raw/2022/October-2022-revised-110523-ggg777.csv",
+      "git_blob_sha1": "7b102d4c825780880380535bd2890b8f5b532d88"
+    },
+    {
+      "path": "data/raw/2022/September-2022-revised-110523-fff666.csv",
+      "git_blob_sha1": "3d816962690a3d63b9a670f96e7057a386a42e7f"
+    },
+    {
+      "path": "data/raw/2023/April-2023-revised-130624-defv1.csv",
+      "git_blob_sha1": "f3cdcd2cfbc92e564cfb5c473bf3ba6bdfc36a8a"
+    },
+    {
+      "path": "data/raw/2023/August-2023-revised-130624-ndx091.csv",
+      "git_blob_sha1": "e611b828958ae837160545ad7bba777b31166bfe"
+    },
+    {
+      "path": "data/raw/2023/December-2023-revised-130624-nbe280.csv",
+      "git_blob_sha1": "755cbbae743e81c9389218a866296d8711d97c5f"
+    },
+    {
+      "path": "data/raw/2023/February-2023-revised-110523-kkk11b.csv",
+      "git_blob_sha1": "ad41daad1cc41c29315355a76a002863b794d0d7"
+    },
+    {
+      "path": "data/raw/2023/January-2023-revised-110523-jjj10a.csv",
+      "git_blob_sha1": "a830a8c16f6a6378c9ffc14f13b60d32f66c7d8d"
+    },
+    {
+      "path": "data/raw/2023/July-2023-revised-130624-ign340.csv",
+      "git_blob_sha1": "7115f340800fba316c09f3641efefa639f25c8a3"
+    },
+    {
+      "path": "data/raw/2023/June-2023-revised-130624-ndcvf47.csv",
+      "git_blob_sha1": "2449de5870f854c66c6059cccf87f10e252b0da5"
+    },
+    {
+      "path": "data/raw/2023/March-2023-revised-110523-lll12c.csv",
+      "git_blob_sha1": "4e14b00cc0b6fe0910c86862b45e8daee90b0815"
+    },
+    {
+      "path": "data/raw/2023/May-2023-revised-130624-aaabbdd.csv",
+      "git_blob_sha1": "373a1b6573bbe50a5ea76004517e06bb420273ba"
+    },
+    {
+      "path": "data/raw/2023/November-2023-revised-130624-vmw208.csv",
+      "git_blob_sha1": "b7e415174fce98b24fde15f36edb6a0d1c1b885b"
+    },
+    {
+      "path": "data/raw/2023/October-2023-revised-130624-nbe280.csv",
+      "git_blob_sha1": "f6cb529c210822e154f4433d99726c32fdcef0f5"
+    },
+    {
+      "path": "data/raw/2023/September-2023-revised-130624-odh304.csv",
+      "git_blob_sha1": "ab911243dbfcce5af362b47ed68210754a212caa"
+    },
+    {
+      "path": "data/raw/2024/February-2024-revised-130624-ef123ty.csv",
+      "git_blob_sha1": "f146e22761a205a638ec656dd16105ad70d1b8f6"
+    },
+    {
+      "path": "data/raw/2024/January-2024-revised-130624-ddff.csv",
+      "git_blob_sha1": "c37ed58e47b7aa6536427c863cd0c4907d0fab6f"
+    },
+    {
+      "path": "data/raw/2024/March-2024-revised-130624-abcdef123.csv",
+      "git_blob_sha1": "2a29edd3b8d1ce8497bcffaa1f4fed090b65e6eb"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-April-2024-revised.csv",
+      "git_blob_sha1": "cfb681140a07c60e0c910c48d5adbc032c21c33a"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-August-2024.csv",
+      "git_blob_sha1": "18597b97a626218306895235bac02c63e33b932b"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-December-2024.csv",
+      "git_blob_sha1": "299fec09eec114ebe23acafcdcb483e5e31bb6e6"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-July-2024-revised.csv",
+      "git_blob_sha1": "714dee7e4bcd90de359cca63423e682d919674da"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-June-2024.csv",
+      "git_blob_sha1": "291eeb9f559ab839323d29dae3eb8fe1cff9ac46"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-May-2024.csv",
+      "git_blob_sha1": "9032c0b9bbf8607b60bd3bd54478767a6bd55090"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-November-2024-revised.csv",
+      "git_blob_sha1": "d8cc9dd679bcba6b32adef941be7892c689338e1"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-October-2024-revised.csv",
+      "git_blob_sha1": "f7e1055a949c7f3ed14e54e4a13068a98328ab8e"
+    },
+    {
+      "path": "data/raw/2024/Monthly-AE-September-2024.csv",
+      "git_blob_sha1": "ddc3143fc45c64b10ff2cd2ce6c9f32760fbd88d"
+    },
+    {
+      "path": "data/raw/2025/April-2025-CSV-revised.csv",
+      "git_blob_sha1": "b7d9f1569badb02b91f2db7d20bc4578f45fbf7b"
+    },
+    {
+      "path": "data/raw/2025/August-2025-CSV-revised.csv",
+      "git_blob_sha1": "2e5f39813337a8b89a62651671f779e7879d9e20"
+    },
+    {
+      "path": "data/raw/2025/July-2025-CSV-revised.csv",
+      "git_blob_sha1": "2b66e73edf575e3d07c4c20dadee1d616b0e7f29"
+    },
+    {
+      "path": "data/raw/2025/June-2025-CSV-revised.csv",
+      "git_blob_sha1": "4595f6095faa0704e0ab1349a939c8a9d962417e"
+    },
+    {
+      "path": "data/raw/2025/May-2025-CSV-revised.csv",
+      "git_blob_sha1": "a439cf9715ba383e15c40542099ed6cfe0baa129"
+    },
+    {
+      "path": "data/raw/2025/Monthly-AE-December-2025-revised-g9Hy6.csv",
+      "git_blob_sha1": "37d9a2b7ddfa53d36ce79f435fd831335ae8ff51"
+    },
+    {
+      "path": "data/raw/2025/Monthly-AE-February-2025-revised.csv",
+      "git_blob_sha1": "572a44e016a9bd5b99f3aa2e37b838d2aca6fb46"
+    },
+    {
+      "path": "data/raw/2025/Monthly-AE-January-2025.csv",
+      "git_blob_sha1": "3f14717db4f13e46b4b2ffe1bfa9400bcfec6b79"
+    },
+    {
+      "path": "data/raw/2025/Monthly-AE-March-2025.csv",
+      "git_blob_sha1": "7a82b06bce8993369d7bedd99a2a4f1c24888306"
+    },
+    {
+      "path": "data/raw/2025/Monthly-AE-Nov-25-CSV-revised.csv",
+      "git_blob_sha1": "3cc52dec357a605395ba365f58d5b19a1da546d4"
+    },
+    {
+      "path": "data/raw/2025/Monthly-AE-October-2025-revised-fly02sk.csv",
+      "git_blob_sha1": "54ed9443c647f167eb3f02ed5ce68b1ed456e05e"
+    },
+    {
+      "path": "data/raw/2025/September-2025-CSV-revised.csv",
+      "git_blob_sha1": "211dff703d6488b672679aa61c7770f47d1be3a3"
+    },
+    {
+      "path": "data/raw/2026/April-2026-CSV-QD21vf.csv",
+      "git_blob_sha1": "83db2fb964db7cbc7c399989d399213be20400aa"
+    },
+    {
+      "path": "data/raw/2026/August-2026-CSV-De2k3n.csv",
+      "git_blob_sha1": "343b5eb9d4eb2b288401c1e0a66d148a30cca011"
+    },
+    {
+      "path": "data/raw/2026/February-2026-CSV-Dl8t54.csv",
+      "git_blob_sha1": "5743904e837c2be43cda77daf2bf6c79701f678f"
+    },
+    {
+      "path": "data/raw/2026/July-2026-CSV-Trf28h.csv",
+      "git_blob_sha1": "639243281987d881c0e975aec32c6f38c51d669d"
+    },
+    {
+      "path": "data/raw/2026/June-2026-CSV-Wfg38l.csv",
+      "git_blob_sha1": "f0d612191d2fd85bf4c38767a95e3cddfeaba389"
+    },
+    {
+      "path": "data/raw/2026/May-2026-CSV-F4flrg.csv",
+      "git_blob_sha1": "bd13987f014c021fd7f5fd3c20876b31a954409b"
+    },
+    {
+      "path": "data/raw/2026/Monthly-AE-January-2026-revised-3dker.csv",
+      "git_blob_sha1": "7cce0ff4a320bd4f5c9415a06a8cb29dd5d5ee7c"
+    },
+    {
+      "path": "data/raw/2026/Monthly-AE-March-2026-revised-flkg42.csv",
+      "git_blob_sha1": "1335fb5c9f128b76adc4d2f68533b09c139f3fb7"
+    },
+    {
+      "path": "data/raw/2026/September-2026-CSV-Re72Eh.csv",
+      "git_blob_sha1": "77d51feeebf087c8cd1bff7b5f89ea05ba29bcee"
+    }
+  ]
+}

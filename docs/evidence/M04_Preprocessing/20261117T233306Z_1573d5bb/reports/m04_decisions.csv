@@ -1,0 +1,8 @@
+finding,decision,stage,status
+Reporting month,Create period as first day of source_month; retain source_period,M04,Implemented
+Mixed grain,Separate national TOTAL rows from providers; preserve both outputs,M04,Implemented
+18 published measures,Convert losslessly to non-negative int64; no scaling or imputation,M04,Implemented
+Organisation identities,"Trim text, uppercase codes; do not merge codes or names",M04,Implemented
+Reported zeros,Retain all zero observations; never fill absent rows with zero,M04,Implemented
+"Missing provider-months, names and large changes",Investigate continuity and source context,M05,Pending
+Type 1 cohort,Define eligibility using history available at each forecast origin,M05/M07,Pending

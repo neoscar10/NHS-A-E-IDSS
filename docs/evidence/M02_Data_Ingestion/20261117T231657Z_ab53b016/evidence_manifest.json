@@ -1,0 +1,89 @@
+{
+  "milestone": "M02",
+  "run_id": "20261117T231657Z_ab53b016",
+  "purpose": "Archive completed ingestion summary and visualise retained record groups.",
+  "created_utc": "2026-11-17T23:16:57+00:00",
+  "git_head": "5eaf2334350a4ffb7f1b5b660af4ac3c2ad50f31",
+  "git_note": "HEAD alone does not identify uncommitted changes; use input hashes.",
+  "python": "3.14.6",
+  "packages": {
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.0.3",
+    "ipykernel": "6.31.0"
+  },
+  "status": "COMPLETE",
+  "note": "Existing reports preserved byte-for-byte. Charts use saved report values. Tests, if enabled, are fresh synthetic-fixture tests.",
+  "inputs": {
+    "src/data/m01_m02.py": {
+      "status": "PRESENT",
+      "bytes": 15214,
+      "sha256": "ba96f27a71f67d798f93eb6ac835a31f5e4e75c3dc3fc91628e5a1b4f323b040"
+    },
+    "src/utils/evidence_exporter.py": {
+      "status": "PRESENT",
+      "bytes": 11989,
+      "sha256": "9bd9cf8ed958bf32aa8f295ae1b35af6da9882113c48395f286f7c0d2875b1af"
+    },
+    "docs/source_manifest.csv": {
+      "status": "PRESENT",
+      "bytes": 63476,
+      "sha256": "54e6bed0089de116139bcc22e3fb0f7f5b5d629b688f89bd68616e67ecf27721"
+    },
+    "docs/m01_coverage.json": {
+      "status": "PRESENT",
+      "bytes": 499,
+      "sha256": "9ca6418dcf52873fef8daf66815c9f8476d330da21df8513841fcd775382bbae"
+    },
+    "data/staging/m02_ingestion_summary.json": {
+      "status": "PRESENT",
+      "bytes": 553,
+      "sha256": "85bbaaf868c0a412399d07b6d5b93eaa78e66b6515998c3dcee5dd5d43c0e424"
+    },
+    "data/staging/ae_historical_raw_combined.csv": {
+      "status": "PRESENT",
+      "bytes": 3053562,
+      "sha256": "b73aa39459f32a4b42438c511c4f25856426d4c471180bb09676e3bc5c6dfc9e"
+    },
+    "data/staging/ae_historical_raw_combined.parquet": {
+      "status": "PRESENT",
+      "bytes": 399187,
+      "sha256": "43beeea2e01c793a95f399f00d70a1c9c2fe12c928bae2b9b9c7a9bb31c3920f"
+    },
+    "tests/test_m01_m02.py": {
+      "status": "PRESENT",
+      "bytes": 6390,
+      "sha256": "e3a722f2d7b7d6e4790c422dc4ca75b88c603b54631230d8124ca4d58b570f1e"
+    }
+  },
+  "artifacts": {
+    "figures/01_ingested_record_groups.png": {
+      "sha256": "32b3a27f3dce22b133d7fa348e1377ba2cdf61b2f88d2be871c08936054c6bfa",
+      "bytes": 75935
+    },
+    "reports/ingestion_interpretation.md": {
+      "sha256": "98a783b1111d2947783eff6212c5a9a0326704378d6b37c036f8424b7905d780",
+      "bytes": 285
+    },
+    "reports/m02_ingestion_summary.json": {
+      "sha256": "85bbaaf868c0a412399d07b6d5b93eaa78e66b6515998c3dcee5dd5d43c0e424",
+      "bytes": 553,
+      "copied_from": "data/staging/m02_ingestion_summary.json"
+    },
+    "test_results/pytest_01.txt": {
+      "sha256": "2f12eec7637e008ca4b70f6e6b35ce8db9c6a20646b96bc7fe190045cfc9f057",
+      "bytes": 314
+    }
+  },
+  "test_runs": [
+    {
+      "tests": [
+        "tests/test_m01_m02.py"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-17T23:17:00+00:00"
+    }
+  ],
+  "finished_utc": "2026-11-17T23:17:01+00:00"
+}

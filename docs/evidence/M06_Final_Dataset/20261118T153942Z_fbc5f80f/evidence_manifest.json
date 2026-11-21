@@ -1,0 +1,188 @@
+{
+  "milestone": "M06",
+  "run_id": "20261118T153942Z_fbc5f80f",
+  "purpose": "Verify and publish a versioned analytical dataset and data contract.",
+  "created_utc": "2026-11-18T15:39:42+00:00",
+  "git_head": "5eaf2334350a4ffb7f1b5b660af4ac3c2ad50f31",
+  "git_note": "HEAD alone does not identify uncommitted changes; use input hashes.",
+  "python": "3.14.6",
+  "packages": {
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "matplotlib": "3.11.0",
+    "pytest": "9.0.3",
+    "ipykernel": "6.31.0"
+  },
+  "status": "COMPLETE",
+  "note": "Dataset verification complete; modelling assumptions remain for the forecasting stage.",
+  "inputs": {
+    "src/data/m06_finalise.py": {
+      "status": "PRESENT",
+      "bytes": 15630,
+      "sha256": "8836d5dcf559ddc82d0e8396104633795d8d99423ee054e18ccd02c98724c0ce"
+    },
+    "src/data/m05_longitudinal.py": {
+      "status": "PRESENT",
+      "bytes": 17089,
+      "sha256": "4639e946bccb8d2efb5cf86c12e2ae017f3554ef7d5e72ce219eabe89854f88f"
+    },
+    "src/data/m04_preprocess.py": {
+      "status": "PRESENT",
+      "bytes": 17435,
+      "sha256": "d70d905147b6203f186019ea318d1c3a01ac26013a98006e3ec5096a2bdb8baa"
+    },
+    "src/utils/evidence_exporter.py": {
+      "status": "PRESENT",
+      "bytes": 11989,
+      "sha256": "9bd9cf8ed958bf32aa8f295ae1b35af6da9882113c48395f286f7c0d2875b1af"
+    },
+    "notebooks/05_m06_final_dataset.ipynb": {
+      "status": "PRESENT",
+      "bytes": 8698,
+      "sha256": "4ecd4b404758c4257deec18742a1369d1013838a89b1025d116a59e0f8c941ac"
+    },
+    "data/processed/m05/20261117T234951Z_969acc23/m05_summary.json": {
+      "status": "PRESENT",
+      "bytes": 1124,
+      "sha256": "b28cd903d77b8824337d2762bdfe1763df8841232b7a90b122dabfcf2ecf0f6e"
+    },
+    "docs/evidence/M05_Longitudinal_Preparation/20261117T234951Z_969acc23/evidence_manifest.json": {
+      "status": "PRESENT",
+      "bytes": 4844,
+      "sha256": "6ee5d2b7ebfbf6b5530470230cada70cc18ff1b8b1913741eccd77adb2daed28"
+    },
+    "data/processed/m05/20261117T234951Z_969acc23/ae_provider_calendar.csv": {
+      "status": "PRESENT",
+      "bytes": 3934248,
+      "sha256": "16500cdcd05cb1cd4cac4e8b6b973c5586770696c2cf115f5157b9051a146aef"
+    },
+    "data/processed/m05/20261117T234951Z_969acc23/ae_provider_calendar.parquet": {
+      "status": "PRESENT",
+      "bytes": 366612,
+      "sha256": "8250d0ecb714f18c3c76fed9436d89df3e9357ad520e38dbb418b72b2cb47bbd"
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/m04_summary.json": {
+      "status": "PRESENT",
+      "bytes": 1930,
+      "sha256": "f011f01e06a5b6bc85915978406fa29a684fc3e273d4b336f10c5b9877b4e657"
+    },
+    "docs/evidence/M04_Preprocessing/20261117T233306Z_1573d5bb/evidence_manifest.json": {
+      "status": "PRESENT",
+      "bytes": 18372,
+      "sha256": "25268b9c53b32395b6b46af675ba5ea7f831c33cea672183555f4d7c2edd4f17"
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/ae_provider_monthly.csv": {
+      "status": "PRESENT",
+      "bytes": 3154168,
+      "sha256": "031b092b9d586f8b9ca148d695189120914ac454039191a0ac8aea36a47dfe1f"
+    },
+    "data/processed/m04/20261117T233306Z_1573d5bb/ae_national_monthly.csv": {
+      "status": "PRESENT",
+      "bytes": 15585,
+      "sha256": "89fccca02974684751af9d8324165fd1901aea8cb5de6206df6f8ca789c9bc16"
+    },
+    "tests/test_m06_finalise.py": {
+      "status": "PRESENT",
+      "bytes": 2533,
+      "sha256": "baf926a15aa340d8e6f0561b2e0aec49587c367d3d5c5dd1f43993d1d9860f1a"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/m06_summary.json": {
+      "status": "PRESENT",
+      "bytes": 1959,
+      "sha256": "602a9ea7a2783d88dfa1b97b487bb19341791f2bc5b605e4b53d301fc9b3467a"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/m06_data_contract.json": {
+      "status": "PRESENT",
+      "bytes": 2700,
+      "sha256": "57766d8c06d1bd75c866c16e24485d01bc6d251a982d4465d8e58a46da063318"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_provider_calendar_final.csv": {
+      "status": "PRESENT",
+      "bytes": 3934248,
+      "sha256": "16500cdcd05cb1cd4cac4e8b6b973c5586770696c2cf115f5157b9051a146aef"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_provider_calendar_final.parquet": {
+      "status": "PRESENT",
+      "bytes": 366612,
+      "sha256": "8250d0ecb714f18c3c76fed9436d89df3e9357ad520e38dbb418b72b2cb47bbd"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_provider_observed_final.csv": {
+      "status": "PRESENT",
+      "bytes": 3154168,
+      "sha256": "031b092b9d586f8b9ca148d695189120914ac454039191a0ac8aea36a47dfe1f"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_provider_observed_final.parquet": {
+      "status": "PRESENT",
+      "bytes": 346893,
+      "sha256": "5450ebfefdfa4911176a374ef9376f19a1a6a22338a5c650eeab26353afeb14a"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_national_final.csv": {
+      "status": "PRESENT",
+      "bytes": 15585,
+      "sha256": "89fccca02974684751af9d8324165fd1901aea8cb5de6206df6f8ca789c9bc16"
+    },
+    "data/processed/m06/20261118T153942Z_fbc5f80f/ae_national_final.parquet": {
+      "status": "PRESENT",
+      "bytes": 29475,
+      "sha256": "681ee6774774e47bb6b6da1dae0653e78ff62aa68b32fd36a1ca93b20977ab1f"
+    }
+  },
+  "artifacts": {
+    "figures/01_final_record_coverage.png": {
+      "sha256": "1006001414248140c817027f0dea6138d206859eec508e344d94c14bb97c6596",
+      "bytes": 85492
+    },
+    "figures/02_candidate_coverage.png": {
+      "sha256": "953b449415560301536ef681a6f903b262279eff000ff44eba84e1fbe7406cc2",
+      "bytes": 126926
+    },
+    "figures/03_national_type1_reconciliation.png": {
+      "sha256": "1c46c36fe7138d5bb6353ae544874d1c101336e0a99e3ca30830ea04f9d2fb4e",
+      "bytes": 339256
+    },
+    "reports/m06_data_contract.json": {
+      "sha256": "57766d8c06d1bd75c866c16e24485d01bc6d251a982d4465d8e58a46da063318",
+      "bytes": 2700,
+      "copied_from": "data/processed/m06/20261118T153942Z_fbc5f80f/m06_data_contract.json"
+    },
+    "reports/m06_data_dictionary.csv": {
+      "sha256": "e6e760ca252cd1ef90d5d66707ce3330ed107ba7c71234305b67b01068236b71",
+      "bytes": 5723
+    },
+    "reports/m06_decisions.csv": {
+      "sha256": "31a18c192762dc982b96b01e8b7443318dab33e35a5059ba17d91541f0eec6da",
+      "bytes": 542
+    },
+    "reports/m06_monthly_profile.csv": {
+      "sha256": "6e85fbb427cb69641fa7348f58d3e62a98fed1bc49c1508e5103ccaa0beff956",
+      "bytes": 2313
+    },
+    "reports/m06_national_reconciliation.csv": {
+      "sha256": "17321aaebc7cbb08f656240420017f11637817fc46921d9d752b3f133b8021e9",
+      "bytes": 54780
+    },
+    "reports/m06_research_report.md": {
+      "sha256": "d5eeb2c6b7fcccfac6692faff7a20a48eb0701a49a7899710164ee297723cc66",
+      "bytes": 917
+    },
+    "reports/m06_summary.json": {
+      "sha256": "602a9ea7a2783d88dfa1b97b487bb19341791f2bc5b605e4b53d301fc9b3467a",
+      "bytes": 1959,
+      "copied_from": "data/processed/m06/20261118T153942Z_fbc5f80f/m06_summary.json"
+    },
+    "test_results/pytest_01.txt": {
+      "sha256": "88d6bdbd5e555cfd2e1d305d5a2c9c1f2429e224ce649303e40cd0ef2b87af29",
+      "bytes": 347
+    }
+  },
+  "test_runs": [
+    {
+      "tests": [
+        "tests/test_m06_finalise.py"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-11-18T15:39:46+00:00"
+    }
+  ],
+  "finished_utc": "2026-11-18T15:39:56+00:00"
+}
