@@ -1,0 +1,108 @@
+{
+  "manifest_version": "1.0",
+  "status": "VERIFIED_REBUILT_INPUT",
+  "dataset_origin": "isolated_rebuild",
+  "verified_utc": "2026-11-21T20:50:40+00:00",
+  "dataset": {
+    "name": "ae_provider_calendar_final.csv",
+    "repository_relative_path": ".work/rebuild/data/processed/m06/20261121T204848Z_03520dac/ae_provider_calendar_final.csv",
+    "parquet_companion_path": ".work/rebuild/data/processed/m06/20261121T204848Z_03520dac/ae_provider_calendar_final.parquet",
+    "sha256": "16500cdcd05cb1cd4cac4e8b6b973c5586770696c2cf115f5157b9051a146aef",
+    "bytes": 3934248,
+    "parquet_sha256": "aac78ba4d3a7feaed8fb79e30399587cccb501a3a45dd9335959a8007450e764",
+    "parquet_bytes": 366962,
+    "schema_version": "1.0",
+    "composite_key": [
+      "org_code",
+      "period"
+    ],
+    "target_measure": "type1_attendances",
+    "reporting_period": {
+      "start_month": "2022-01",
+      "end_month": "2026-09",
+      "reporting_months": 57
+    },
+    "counts": {
+      "rows": 12263,
+      "columns": 35,
+      "provider_codes": 223,
+      "observed_rows": 11392,
+      "absent_rows": 871,
+      "reported_zero_type1_rows": 4426,
+      "reported_positive_type1_rows": 6966,
+      "history_ready_rows": 8912,
+      "candidate_origin_rows": 5599,
+      "latest_month_observed_providers": 191,
+      "latest_month_candidates": 120,
+      "history_window_months": 12
+    },
+    "eligibility_fields": [
+      "history_ready",
+      "type1_candidate",
+      "candidate_status"
+    ]
+  },
+  "provenance": {
+    "execution_mode": "rebuild",
+    "rebuild_workflow_id": "404e589ba07646b3b0919cf32671fcb1",
+    "rebuild_code_signature_sha256": "3b0acebb8532e78436059dbe0463b39f14837a311f4b159ad5f8fad8b83e663a",
+    "m06_run_id": "20261121T204848Z_03520dac",
+    "m05_run_id": "20261121T204835Z_cea0246e",
+    "m04_run_id": "20261121T204820Z_bff63caa",
+    "m03_run_id": "20261121T204804Z_592d47ff",
+    "m02_run_id": "20261121T204754Z_e88b32fa",
+    "m01_run_id": "20261121T204753Z_0f8fc95f",
+    "m06_summary_path": ".work/rebuild/data/processed/m06/20261121T204848Z_03520dac/m06_summary.json",
+    "m06_contract_path": ".work/rebuild/data/processed/m06/20261121T204848Z_03520dac/m06_data_contract.json",
+    "m06_evidence_manifest_path": ".work/rebuild/docs/evidence/M06_Final_Dataset/20261121T204848Z_03520dac/evidence_manifest.json",
+    "repository_branch": "adamu/model-training-evaluation",
+    "repository_head_commit": "69df9d356456ccd2cec3e758fff369805b058f98",
+    "preprocessing_commit": "541b327d877fcf30fd8e8026da581307e19d2507",
+    "source_baseline": {
+      "path": "docs/source_baseline.json",
+      "source_version": "nhs-ae-2022-01_2026-09-v1",
+      "source_baseline_sha256": "b24521ff058f2ae127585663bdfe1e0f8d1156424339c04a345dbf60f9bcb431",
+      "source_files_verified": 57
+    }
+  },
+  "archived_reference_comparison": {
+    "archived_m06_run_id": "20261118T153942Z_fbc5f80f",
+    "archived_evidence_path": "docs/evidence/M06_Final_Dataset/20261118T153942Z_fbc5f80f/evidence_manifest.json",
+    "archived_csv_sha256": "16500cdcd05cb1cd4cac4e8b6b973c5586770696c2cf115f5157b9051a146aef",
+    "csv_sha256_exact_match": true,
+    "archived_parquet_sha256": "8250d0ecb714f18c3c76fed9436d89df3e9357ad520e38dbb418b72b2cb47bbd",
+    "parquet_sha256_exact_match": false,
+    "parquet_difference_note": "Byte-level Parquet difference due to PyArrow 24.0.0 vs archived 23.0.1; tabular contents verified identical via Parquet-to-CSV round-trip check."
+  },
+  "environment": {
+    "python_version": "3.12.10",
+    "packages": {
+      "pandas": "2.3.3",
+      "pyarrow": "24.0.0",
+      "matplotlib": "3.11.2",
+      "pytest": "9.2.0",
+      "ipykernel": "7.4.0"
+    }
+  },
+  "verification": {
+    "m06_summary_status": "PASS_FINAL_DATASET_VERIFICATION",
+    "m06_evidence_status": "COMPLETE",
+    "contract_checks_passed": true,
+    "unique_org_code_period_key": true,
+    "non_negative_reported_counts": true,
+    "absent_rows_null_measures_only": true,
+    "reported_zeros_preserved": true,
+    "eligibility_rules_verified": true,
+    "national_reconciliation_comparisons": 1026,
+    "national_reconciliation_mismatches": 0,
+    "pytest_suite": {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest -q",
+      "passed": 95,
+      "failed": 0,
+      "exit_code": 0
+    }
+  },
+  "modelling_constraints": {
+    "note": "Rebuilt locally in the Git-ignored .work/rebuild/ workspace rather than copied from the original archived M06 run, though the rebuilt CSV matches the archived M06 CSV SHA-256 byte-for-byte. Do not impute absent rows as zero, and do not use future-derived eligibility, same-target-month measures, national totals, or provenance identifiers as predictors."
+  }
+}
